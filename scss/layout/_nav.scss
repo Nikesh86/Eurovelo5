@@ -1,0 +1,12 @@
+nav{
+    >div:nth-child(1){
+        background-color: aquamarine;
+        display: flex;
+        justify-content: space-between;
+    }
+    >div:nth-child(2){
+        background-color: aqua;
+        display: flex;
+        justify-content: space-between;
+    }
+}
