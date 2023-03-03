@@ -1676,11 +1676,40 @@ Flaticon icon font: Flaticon
   content: "\e75f";
 }
 
+a {
+  text-decoration: none;
+}
+
+footer > div:nth-child(1) {
+  background-color: rgb(240, 217, 197);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+footer > div:nth-child(2) {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+footer > div:nth-child(3) {
+  background-color: rgb(198, 198, 198);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+footer > div:nth-child(4) {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
 .mapform {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  margin-top: 10%;
+  margin-top: 5px;
   padding: 10;
 }
 .mapform .formule {
@@ -1718,6 +1747,18 @@ Flaticon icon font: Flaticon
   background-color: #030303;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+}
+
+.text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #585858;
+  line-height: 1.5em;
+}
+.text h2 {
+  font-size: 2.5rem;
+  color: #030303;
 }
 
 .carousel {
@@ -1776,13 +1817,13 @@ Flaticon icon font: Flaticon
   background-color: #999;
 }
 
-.text {
-  text-align: center;
-  font-weight: 500;
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
+nav > div:nth-child(1) {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
 }
-.text .h2 {
-  font-size: 2.625rem;
+nav > div:nth-child(2) {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
