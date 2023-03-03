@@ -1674,44 +1674,4 @@ Flaticon icon font: Flaticon
 
 .ti-rss-alt:before {
   content: "\e75f";
-}
-
-a {
-  text-decoration: none;
-}
-
-footer > div:nth-child(1) {
-  background-color: rgb(240, 217, 197);
-  color: black;
-  display: flex;
-  justify-content: space-between;
-}
-footer > div:nth-child(2) {
-  background-color: white;
-  color: black;
-  display: flex;
-  flex-direction: column;
-}
-footer > div:nth-child(3) {
-  background-color: rgb(198, 198, 198);
-  color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-}
-footer > div:nth-child(4) {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav > div:nth-child(1) {
-  background-color: aquamarine;
-  display: flex;
-  justify-content: space-between;
-}
-nav > div:nth-child(2) {
-  background-color: aqua;
-  display: flex;
-  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
