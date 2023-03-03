@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Eurovelo5/sass/main.css">
+    <link href="https://cycling.waymarkedtrails.org/api/v1/details/relation/5245117/geometry/gpx">
+    <link rel="stylesheet" href="../main.css">
     <title>Accuil</title>
 </head>
 
@@ -42,20 +43,49 @@
 
 
         <!-- Slideshow container à voir -->
-        <div class="container">
-            <div class="centered">
-                <h1>La Vélomaritime</h1>
-                <h2>Une expérience unique à la découverte de perles rares</h2>
-            </div>
-            <img src="../Image/romania-velo.jpg" width="100%" height="40%" alt="eurovelo5">
+
+        <div class="centered">
+            <h1>La Vélomaritime</h1>
+            <h2>Une expérience unique à la découverte de perles rares</h2>
         </div>
-        <div><input type="text">lieu de départ</div>
-        <div><input type="text">Lieu d'arrive</div>
-        <a href="#"> CALCULER MON ITINERAIRE</a>
+        <div class="carousel">
+            <input type="radio" name="carousel" id="image1" checked>
+            <input type="radio" name="carouse1" id="image2">
+            <input type="radio" name="carouse1" id="image3">
+            <input type="radio" name="carouse1" id="image4">
+            <input type="radio" name="carouse1" id="image5">
+            <input type="radio" name="carouse1" id="image6">
+            <div class="slide">
+                <img src="../Image/to-go-biking-g1c66c60cb_1920.jpg" alt="to-go-biking"> 
+                <img src="../Image/family-velo.jpg" alt="family velo">
+                <img src="../Image/romania-velo.jpg" alt="velo">
+                <img src="../Image/sunset-velo.jpg" alt="sunset velo">
+                <img src="../Image/to-go-biking-2.jpg" alt="to-go-biking-2">
+                <img src="../Image/to-go-biking.jpg" alt=" biking">
+            </div>
+            <div class="navigation">
+                <label for="image1"></label>
+                <label for="image2"></label>
+                <label for="image3"></label>
+                <label for="image4"></label>
+                <label for="image5"></label>
+                <label for="image6"></label>
+            </div>
+        </div>
+
+
+        <div class="bottn">
+        </div>
+        <div><input type="text" placeholder="Lieu de départ"></div>
+        <div><input type="text" placeholder="Lieu d'arrive"></div>
+        <a href="#">CALCULER MON ITINERAIRE</a>
+
 
         <article>
+            <div class="text">
             <h2>EuroVelo 4 - La Vélomaritime®, 1 500 km à vélo de la Manche à la Mer du Nord</h2>
-            <p>Prêt à vivre un parcours en pleine nature ? La Vélomaritime, véloroute continue à 100% vous invite en
+            <p>Prêt à vivre un parcours en pleine nature ? La Vélomaritime,<a href="#">véloroute continue à 100%</a>
+                vous invite en
                 famille ou entre amis à découvrir le patrimoine extraordinaire du nord de la France… à deux roues !
                 L’itinéraire débute à Roscoff en Bretagne et se termine à Dunkerque, à la frontière Belge. Cet
                 itinéraire à vélo fait la part belle au littoral en traversant des sites mythiques tels que la côte de
@@ -66,57 +96,63 @@
                 recherche d’évasion, de défi, de découverte culturelle et gastronomique. Vous n’avez pas l’habitude du
                 vélo ? Profitez-en pour vous remettre en selle !
             </p>
+            <p>&nbsp;</p>
+        </div>
         </article>
-        <section>
+        
+        <!--Fourmuler et map sur grid-->
+        <section class="mapform">
+            <form class="formule">
+                <h3>Pédalez selon vos envies</h3>
+                <select name="tous les parcours">
+                    <option value="tous les parcours">tous les parcours</option>
+                    <option value="Aller simple">Aller simple</option>
+                    <option value="Aller-retour">Aller-retour</option>
+                    <option value="En boucle">En boucle</option>
+                </select>
+
+                <select name="Toutes les difficultés">
+                    <option value="Toutes les difficultéss">Toutes les difficultéss</option>
+                    <option value="j'ai l'habitude">j'ai l'habitude</option>
+                    <option value="je débute/ En famille">je débute/En famille</option>
+                    <option value="je me dépasse">Je me dépasse</option>
+                </select>
+
+                <select name="Toutes les durées">
+                    <option value="Toutes les durées">Toutes les durées</option>
+                    <option value="2-3 jours">2-3 jours</option>
+                    <option value="1 semaine et +">1 semaine et +</option>
+                    <option value="#4-6 jours">4-6 jours</option>
+                </select>
+
+                <select name="Toutes les thématiques">
+                    <option value="Toutes les thématiques">Toutes les thématiques</option>
+                    <option value="Nature">Nature</option>
+                    <option value="Patrimonine">Patrimonine</option>
+                    <option value="panorama">panorama</option>
+                    <option value="Site incontournables">Site incontournables</option>
+                    <option value="je viens en train">je viens en train</option>
+                    <option value="Plage">Plage</option>
+                </select>
+
+                <select name="Toutes les dectinations">
+                    <option value="Toutes les dectinations">Toutes les dectinations</option>
+                    <option value="Normandi">Normandi</option>
+                    <option value="Bretagne">Bretagne</option>
+                    <option value="Hauts-de-France">Hauts-de-France</option>
+                </select>
+                <button class="button">TOURVER MON PARCOURS IDEAL</button>
+            </form>
+
             <div class="map">
+                <trkseg>
+                    ...
+                </trkseg>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8811177329244!2d2.288469115887942!3d48.86047730851352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe3411d2971%3A0xb51467f04765bff!2sAv.%20des%20Nations%20Unies%2C%2075116%20Paris!5e0!3m2!1sfr!2sfr!4v1676906313381!5m2!1sfr!2sfr"
                     width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
-            <form action="">
-                <h3>Pédalez selon vos envies</h3>
-                <div> <select name="tous les parcours" id="tous les parcours">
-                        <option value="#">tous les parcours</option>
-                        <option value="#">Aller simple</option>
-                        <option value="#">Aller-retour</option>
-                        <option value="#">En boucle</option>
-                    </select></div>
-
-                <div> <select name="Toutes les difficultés" id="Toutes les difficultés">
-                        <option value="#">Toutes les difficultéss</option>
-                        <option value="#">j'ai l'habitude</option>
-                        <option value="#">je débute/En famille</option>
-                        <option value="#">Je me dépasse</option>
-                    </select></div>
-
-                <div> <select name="Toutes les durées" id="Toutes les durées">
-                        <option value="#">Toutes les durées</option>
-                        <option value="#">2-3 jours</option>
-                        <option value="#">1 semaine et +</option>
-                        <option value="#">4-6 jours</option>
-                    </select></div>
-
-                <div> <select name="Toutes les thématiques" id="Toutes les thématiques">
-                        <option value="#">Toutes les thématiques</option>
-                        <option value="#">Nature</option>
-                        <option value="#">Patrimonine</option>
-                        <option value="#">panorama</option>
-                        <option value="#">Site incontournables</option>
-                        <option value="#">je viens en train</option>
-                        <option value="#">Plage</option>
-                    </select></div>
-
-                <div> <select name="Toutes les dectinations" id="Toutes les dectinations">
-                        <option value="#">Toutes les dectinations</option>
-                        <option value="#">Normandi</option>
-                        <option value="#">Bretagne</option>
-                        <option value="#">Hauts-de-France</option>
-                    </select></div>
-
-                <button>TOURVER MON PARCOURS IDEAL</button>
-            </form>
         </section>
 
 

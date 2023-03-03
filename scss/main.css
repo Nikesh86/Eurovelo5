@@ -1674,4 +1674,115 @@ Flaticon icon font: Flaticon
 
 .ti-rss-alt:before {
   content: "\e75f";
+}
+
+.mapform {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 10%;
+  padding: 10;
+}
+.mapform .formule {
+  background-color: #007c74;
+  padding: 30px 15px;
+  margin: 40px 0 0 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.mapform .formule select {
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 60%;
+  box-sizing: border-box;
+  border: 1px solid rgb(30, 29, 29);
+  margin-bottom: 10px;
+}
+.mapform .formule h3 {
+  margin: 0;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.mapform .formule .button {
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #030303;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carousel {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.carousel .slide {
+  width: 600%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel .slide img {
+  width: 16.6666666667%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel input[type=radio] {
+  display: none;
+}
+
+.carousel input[type=radio]:checked ~ .slide {
+  transform: translateX(-16.666%);
+}
+
+.carousel .navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel .navigation label {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel .navigation label:hover {
+  background-color: #999;
+}
+
+.carousel input[type=radio]:checked + .navigation label {
+  background-color: #999;
+}
+
+.text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #585858;
+  line-height: 1.5em;
+}
+.text .h2 {
+  font-size: 2.625rem;
 }/*# sourceMappingURL=main.css.map */

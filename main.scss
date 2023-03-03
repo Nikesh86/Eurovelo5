@@ -1,39 +1,40 @@
 //vendors
-@import "./vendors/flaticons";
-@import "./vendors/themify-icons";
+@import "./scss/vendors/flaticons";
+@import "./scss/vendors/themify-icons";
 
 
 //base
-@import "./base/reset";
-@import "./base/typography";
-@import "./base/container";
+@import "./scss/base/reset";
+@import "./scss/base/typography";
+@import "./scss/base/container";
 
 
 //utils
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/variables";
+@import "./scss/utils/functions";
+@import "./scss/utils/mixins";
+@import "./scss/utils/variables";
 
 
 //components
-@import "./components/buttons";
-@import "./components/images";
-@import "./components/lists";
-@import "./components/sliders";
+@import "./scss/components/buttons";
+@import "./scss/components/images";
+@import "./scss/components/lists";
+@import "./scss/components/sliders";
 
 
 //layout
-@import "./layout/aside";
-@import "./layout/footer";
-@import "./layout/form";
-@import "./layout/grid";
-@import "./layout/header";
-@import "./layout/nav";
+@import "./scss/layout/aside";
+@import "./scss/layout/footer";
+@import "./scss/layout/form";
+@import "./scss/layout/grid";
+@import "./scss/layout/header";
+@import "./scss/layout/nav";
 
 
 //pages
-@import "./pages/index";
+@import "./scss/pages/index";
+
 
 
 //themes
-@import "./themes/darktheme";
+@import "./scss/themes/darktheme";
