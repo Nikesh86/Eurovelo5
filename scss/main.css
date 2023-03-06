@@ -1832,9 +1832,19 @@ footer > div:nth-child(4) a {
   color: #030303;
 }
 
-.grids {
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+.grid span {
+  display: inline-block;
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 5px 10px;
+  color: #fff;
+  background: #eea622;
 }
 
 .carousel {

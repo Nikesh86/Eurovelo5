@@ -50,8 +50,18 @@
 }
 
 // grid section 5//
-.grids{
-    display: grid;
- grid-template-columns: repeat(3,1fr);
-  
+.grid{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+position: relative;
+span{
+    display: inline-block;
+    font-family: "Mukta Mahee",sans-serif;
+    font-weight: 600;
+    font-size: .875rem;
+    padding: 5px 10px;
+    color: #fff;
+    background: #eea622; 
 }
+
+ }
