@@ -1676,75 +1676,154 @@ Flaticon icon font: Flaticon
   content: "\e75f";
 }
 
-.savoir {
-  padding-left: 30%;
-  padding-right: 30%;
+a {
+  text-decoration: none;
 }
 
-.page_savoir {
-  font-family: Poppins, sans-serif;
-  font-weight: 700;
-  font-size: 1.875rem;
-  color: #231f20;
-  text-align: center;
-  margin: 0;
+footer > div:nth-child(1) {
+  background-color: rgb(240, 217, 197);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+footer > div:nth-child(2) {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+footer > div:nth-child(3) {
+  background-color: rgb(198, 198, 198);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+footer > div:nth-child(4) {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
-.en_savoir {
+.mapform {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 5px;
+  padding: 10;
+}
+.mapform .formule {
+  background-color: #007c74;
+  padding: 30px 15px;
+  margin: 40px 0 0 0;
   font-size: 1.5rem;
-  color: #231f20;
-  font-family: Poppins, sans-serif;
   font-weight: 600;
+  color: #fff;
+  text-align: center;
 }
-
-.en_savoir1 {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
+.mapform .formule select {
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 60%;
+  box-sizing: border-box;
+  border: 1px solid rgb(30, 29, 29);
+  margin-bottom: 10px;
 }
-
-.savoir_plus1 {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
+.mapform .formule h3 {
+  margin: 0;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
-
-.savoir_plus2 {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
-}
-
-.button_plus_savoir {
-  background-color: #00b9ca;
+.mapform .formule .button {
+  margin: 20px;
+  padding: 10px 20px;
   border: none;
-  color: white;
-  padding: 13px 30px;
-  text-decoration: none;
-  margin: 4px 2px 100px 2px;
-  border-radius: 5px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #030303;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.button_savoir {
-  background-color: #00b9ca;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-decoration: none;
-  margin: 4px 2px 100px 2px;
-  border-radius: 5px;
-}
-
-.liste_savoir {
+.text {
+  text-align: center;
+  font-weight: 500;
   font-size: 1.125rem;
   color: #585858;
   line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
+}
+.text h2 {
+  font-size: 2.5rem;
+  color: #030303;
+}
+
+.carousel {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.carousel .slide {
+  width: 600%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel .slide img {
+  width: 16.6666666667%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel input[type=radio] {
+  display: none;
+}
+
+.carousel input[type=radio]:checked ~ .slide {
+  transform: translateX(-16.666%);
+}
+
+.carousel .navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel .navigation label {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel .navigation label:hover {
+  background-color: #999;
+}
+
+.carousel input[type=radio]:checked + .navigation label {
+  background-color: #999;
+}
+
+nav > div:nth-child(1) {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+}
+nav > div:nth-child(2) {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

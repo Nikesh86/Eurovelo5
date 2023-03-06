@@ -1,21 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link href="https://cycling.waymarkedtrails.org/api/v1/details/relation/5245117/geometry/gpx">
+    <link rel="stylesheet" href="../main.css">
     <title>Accuil</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <nav>
+            <div>
+                <div>
+                    <a href="">logo insta</a>
+                    <a href="">logo facebook</a>
+                </div>
+                <div>
+                    <a href="#"><img src="#" alt="coeur"></a>
+                    <a href="#"><img src="#" alt="perso"></a>
+                    <a href="#"><img src="#" alt="pays"></a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="./Accueil.html"><img src="#" alt=""><img src="#" alt="eurovelo5"></a>
+                    <a href="./l_itineraire.html">l'itinéraire</a>
+                    <a href="./infospratiques.html">infos pratiques</a>
+                    <a href="">à découvrir</a>
+                    <a href="./idee_parrcours.html">idées parcours</a>
+                    <a href="./velo_et_transports.html">vélo et transports</a>
+                    <a href="./">passeport</a>
+                </div>
+                <div>
+                    <a href="">icon loupe</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Slideshow container à voir -->
+
+        <div class="centered">
+            <h1>La Vélomaritime</h1>
+            <h2>Une expérience unique à la découverte de perles rares</h2>
+        </div>
+        <div class="carousel">
+            <input type="radio" name="carousel" id="image1" checked>
+            <input type="radio" name="carouse1" id="image2">
+            <input type="radio" name="carouse1" id="image3">
+            <input type="radio" name="carouse1" id="image4">
+            <input type="radio" name="carouse1" id="image5">
+            <input type="radio" name="carouse1" id="image6">
+
+            <div class="slide">
+                <img src="../Image/romania-velo.jpg" alt="velo">
+                <img src="../Image/sunset-velo.jpg" alt="sunset velo">
+                <img src="../Image/to-go-biking-g1c66c60cb_1920.jpg" alt="to-go-biking">
+                <img src="../Image/family-velo.jpg" alt="family velo">
+                <img src="../Image/to-go-biking-2.jpg" alt="to-go-biking-2">
+                <img src="../Image/to-go-biking.jpg" alt=" biking">
+            </div>
+            <div class="navigation">
+                <label for="image1"></label>
+                <label for="image2"></label>
+                <label for="image3"></label>
+                <label for="image4"></label>
+                <label for="image5"></label>
+                <label for="image6"></label>
+            </div>
+        </div>
+
+
+        <div class="bottn">
+        </div>
+        <div><input type="text" placeholder="Lieu de départ"></div>
+        <div><input type="text" placeholder="Lieu d'arrive"></div>
+        <a href="#">CALCULER MON ITINERAIRE</a>
+
+
+        <article>
+            <div class="text">
+                <h2>EuroVelo 4 - La Vélomaritime®, 1 500 km à vélo de la Manche à la Mer du Nord</h2>
+                <p>Prêt à vivre un parcours en pleine nature ? La Vélomaritime,<a href="#">véloroute continue à 100%</a>
+                    vous invite en
+                    famille ou entre amis à découvrir le patrimoine extraordinaire du nord de la France… à deux roues !
+                    L’itinéraire débute à Roscoff en Bretagne et se termine à Dunkerque, à la frontière Belge. Cet
+                    itinéraire à vélo fait la part belle au littoral en traversant des sites mythiques tels que la côte
+                    de
+                    Granit Rose, le Mont-Saint-Michel et sa baie, les Plages du Débarquement, les falaises d’Étretat, la
+                    Baie de Somme ou encore la côte d’Opale. À chaque étape, son lot de surprises ! 
+                    <p>&nbsp;</p>
+                    Avec une part importante de voies partagées, c’est un itinéraire vélo idéal pour les cyclistes en
+                    recherche d’évasion, de défi, de découverte culturelle et gastronomique. Vous n’avez pas l’habitude
+                    du
+                    vélo ? Profitez-en pour vous remettre en selle !
+                </p>
+                <img src="../Image/pictos-velodyssee3.jpg" alt="image">
+                
+            </div>
+        </article>
+
+        <!--Fourmuler et map sur grid-->
+        <section class="mapform">
+            <form class="formule">
+                <h3>Pédalez selon vos envies</h3>
+                <select name="tous les parcours">
+                    <option value="tous les parcours">tous les parcours</option>
+                    <option value="Aller simple">Aller simple</option>
+                    <option value="Aller-retour">Aller-retour</option>
+                    <option value="En boucle">En boucle</option>
+                </select>
+
+                <select name="Toutes les difficultés">
+                    <option value="Toutes les difficultéss">Toutes les difficultéss</option>
+                    <option value="j'ai l'habitude">j'ai l'habitude</option>
+                    <option value="je débute/ En famille">je débute/En famille</option>
+                    <option value="je me dépasse">Je me dépasse</option>
+                </select>
+
+                <select name="Toutes les durées">
+                    <option value="Toutes les durées">Toutes les durées</option>
+                    <option value="2-3 jours">2-3 jours</option>
+                    <option value="1 semaine et +">1 semaine et +</option>
+                    <option value="#4-6 jours">4-6 jours</option>
+                </select>
+
+                <select name="Toutes les thématiques">
+                    <option value="Toutes les thématiques">Toutes les thématiques</option>
+                    <option value="Nature">Nature</option>
+                    <option value="Patrimonine">Patrimonine</option>
+                    <option value="panorama">panorama</option>
+                    <option value="Site incontournables">Site incontournables</option>
+                    <option value="je viens en train">je viens en train</option>
+                    <option value="Plage">Plage</option>
+                </select>
+
+                <select name="Toutes les dectinations">
+                    <option value="Toutes les dectinations">Toutes les dectinations</option>
+                    <option value="Normandi">Normandi</option>
+                    <option value="Bretagne">Bretagne</option>
+                    <option value="Hauts-de-France">Hauts-de-France</option>
+                </select>
+                <button class="button">TOURVER MON PARCOURS IDEAL</button>
+            </form>
+
+            <div class="map">
+                <trkseg>
+                    ...
+                </trkseg>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8811177329244!2d2.288469115887942!3d48.86047730851352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe3411d2971%3A0xb51467f04765bff!2sAv.%20des%20Nations%20Unies%2C%2075116%20Paris!5e0!3m2!1sfr!2sfr!4v1676906313381!5m2!1sfr!2sfr"
+                    width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
 
 
 
 
+    </header>
 
+    <main>
 
+        <section id="section2">
+            <h2>Trouver mon Accueil vélo</h2>
+            <p>Accueil Vélo est une marque qui garantit des services de qualité auprès des cyclistes le long de
+                l'itinéraire
+            </p>
+
+            <div class="AccueilVelo">
+                <figure>
+                    <img src="https://www.lavelomaritime.fr/themes/fvt/images/hebergements-920.png" alt="">
+                    <figcaption>Hébergement</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://www.lavelomaritime.fr/themes/fvt/images/restaurants-920.png" alt="">
+                    <figcaption>Restaurant</figcaption>
+                </figure>
+
+                <img src="https://www.lavelomaritime.fr/themes/fvt/images/lieux-visite-920.png" alt="">
+                <figcaption>Lieux de visite</figcaption>
+
+                <img src="https://www.lavelomaritime.fr/themes/fvt/images/office-tourisme-920.png" alt="">
+                <figcaption>Offices de tourisme</figcaption>
+
+                <img src="https://www.lavelomaritime.fr/themes/fvt/images/loueurs-920.png" alt="">
+                <figcaption>Loueurs & réparateurs de vélo</figcaption>
+            </div>
+
+        </section>
+
+        <section id="section3">
+            <h2>Il·elle·s l'ont fait !</h2>
+            <p>
+                Plutôt vélo de route, VTC ou VTT ? Si vous hésitez à vous lancer, lisez le témoignage de ceux qui ont
+                expérimenté cet itinéraire à vélo avant vous ! En solo, en famille ou entre amis, il·elle·s ont parcouru
+                La
+                Vélomaritime en entier ou en partie. Retrouvez leurs coups de cœur sur la route, leurs étapes favorites
+                et
+                tous leurs conseils !
+            </p>
+
+            <div>
+                <!-- slider -->
+            </div>
+            <a href="#">Tous les témoignages</a>
+        </section>
+
+        <section id="section4">
+            <h2>Les derniers avis publiés !</h2>
+            <p>
+                Les avis et commentaires de voyageurs à vélo sur nos parcours. N'hésitez pas à déposer le votre sur les
+                tracés que vous avez déjà parcourus !
+            </p>
+
+            <article>
+                <!-- Avis avec Strapi -->
+            </article>
+
+            <article>
+                <!-- Avis avec Strapi -->
+            </article>
+
+            <article>
+                <!-- Avis avec Strapi -->
+            </article>
+        </section>
+
+        <section id="section5">
+            <h2>Rejoignez l'aventure !</h2>
+            <p>
+                Découvrez toutes nos idées pour un week-end, les nouveautés et tutos pour s'élancer sur La Vélomaritime
+                !
+                Vous êtes prêts à rejoindre cet itinéraire cyclable bercé par les embruns ? À vos guidons ! L'aventure
+                est à
+                portée de main.
+            </p>
+
+            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/Leffrinckoucke-1920.webp?h=e5aec6c8&itok=Fywjoq2h"
+                alt="">
+            <figcaption>
+                <span>Informations générales</span>
+                <a href="#"><!-- coeur pour liker --></a>
+                <a href="#">La Vélomaritime, c'est quoi ?</a>
+            </figcaption>
+
+            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/eb-replay.webp?h=ffe3ebf3&itok=8I8wEYl7"
+                alt="">
+            <figcaption>
+                <span>À revoir 🎥</span>
+                <a href="#"><!-- coeur pour liker --></a>
+                <a href="#">L'épisode d'Échappées Belles consacré à La Vélomaritime</a>
+            </figcaption>
+
+            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/crtb-ad3160_berthier-emmanuel.webp?h=44ddf43b&itok=8J9UtMp7"
+                alt="">
+            <figcaption>
+                <span>À découvrir</span>
+                <a href="#"><!-- coeur pour liker --></a>
+                <a href="#">La Vélomaritime de phares en phares</a>
+            </figcaption>
+
+            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/1.vue_sur_le_site_des_deux-caps_ce._desaunois.webp?h=0bc8bfcd&itok=4TLo7cX7"
+                alt="">
+            <figcaption>
+                <span>À découvrir</span>
+                <a href="#"><!-- coeur pour liker --></a>
+                <a href="#">Les sites incontournables le long de La Vélomaritime</a>
+            </figcaption>
+
+            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/1_14_Seineavelo_DDarrault-9222.webp?h=e5aec6c8&itok=SqC-DJdj"
+                alt="">
+            <figcaption>
+                <span>Organisation</span>
+                <a href="#"><!-- coeur pour liker --></a>
+                <a href="#">Comment organiser son voyage à vélo ?</a>
+            </figcaption>
+
+            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/velomaritime-faq.webp?h=9379de74&itok=GRfOFd2n"
+                alt="">
+            <figcaption>
+                <span>Pratique</span>
+                <a href="#"><!-- coeur pour liker --></a>
+                <a href="#">Foire aux questions</a>
+            </figcaption>
+
+            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/22-camping-cap-de-brehat-bivouac-hauteur.webp?h=10d202d3&itok=TQm_6CjX"
+                alt="">
+            <figcaption>
+                <span>Bonnes adresses</span>
+                <a href="#"><!-- coeur pour liker --></a>
+                <a href="#">Voyagez léger</a>
+                <div class="accroche">Des solutions adaptées pour le tourisme à vélo</div>
+            </figcaption>
+
+            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/visuel_signalement_%20nouvelle%20version%20avec%20logo.webp?h=3960caa2&itok=flUOnKdD"
+                alt="">
+            <figcaption>
+                <span>Pratique</span>
+                <a href="#"><!-- coeur pour liker --></a>
+                <a href="#">Signalez / consultez des anomalies sur La Vélomaritime</a>
+            </figcaption>
+
+            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/lunettes-friendly-frenchy-la-velomaritime.webp?h=1db28fbb&itok=c1LA6Hcg"
+                alt="">
+            <figcaption>
+                <span>Partenariat</span>
+                <a href="#"><!-- coeur pour liker --></a>
+                <a href="#">Les lunettes en coquillage®</a>
+            </figcaption>
+        </section>
+
+        <section id="section6">
+            <h2>Partez en voyage, ils organisent tout pour vous !</h2>
+            <p>
+                Pas envie de préparer vos vacances ? Premier voyage à vélo ? Des agences de voyages spécialisées en vélo
+                ont
+                l'habitude d'organiser vos aventures à deux roues. Les experts vous proposent des séjours clés en main.
+                De
+                quoi partir serein et l'esprit libre sur cet itinéraire à vélo avec un voyage conçu selon vos envies !
+            </p>
+
+            <div>
+                <!-- slider -->
+            </div>
+            <a href="#">Tous les séjours</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- footer 1 -->
+        <div>
+            <div>
+                <div>
+                    <a href="./Accueil.html"><img src="" alt=""><img src="" alt="eurovelo5"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/">logo insta</a>
+                    <a href="https://www.facebook.com/">logo facebook</a>
+                </div>
+            </div>
+        </div>
+        <!-- footer 2 -->
+        <div>
+            <p><a href="">Espace pro</a></p>
+            <ul>
+                <li><a href="">Presse</a></li>
+                <li><a href="">Tours-Opérateurs</a></li>
+                <li><a href="">Outils de communication</a></li>
+            </ul>
+        </div>
+        <!-- footer 3 -->
+        <div>
+            <img src="#" alt="#">
+            <div>
+                <p>La marque Accueil Vélo qu'est ce que c'est ?</p>
+                <p>Accueil Vélo est une marque nationale qui garantit un accueil et des services de qualité auprès des
+                    cyclistes le long des itinéraires cyclables.</p>
+            </div>
+            <a href="">en savoir</a>
+            <a href="">devenir accueil vélo</a>
+        </div>
+        <!-- footer 4 -->
+        <div>
+            <div>
+                <a href="">Espace pro / presse</a><a href="">FAQ</a><a href="">Mentions légales</a><a href="">Gestion
+                    des cookies</a>
+            </div>
+            <div>
+                <p>realisation</p><a href="">Simplon</a><a href="">france velo tourisme</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
+
 </body>
+
 </html>

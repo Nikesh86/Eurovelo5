@@ -1,0 +1,40 @@
+//vendors
+@import "./scss/vendors/flaticons";
+@import "./scss/vendors/themify-icons";
+
+
+//base
+@import "./scss/base/reset";
+@import "./scss/base/typography";
+@import "./scss/base/container";
+
+
+//utils
+@import "./scss/utils/functions";
+@import "./scss/utils/mixins";
+@import "./scss/utils/variables";
+
+
+//components
+@import "./scss/components/buttons";
+@import "./scss/components/images";
+@import "./scss/components/lists";
+@import "./scss/components/sliders";
+
+
+//layout
+@import "./scss/layout/aside";
+@import "./scss/layout/footer";
+@import "./scss/layout/form";
+@import "./scss/layout/grid";
+@import "./scss/layout/header";
+@import "./scss/layout/nav";
+
+
+//pages
+@import "./scss/pages/index";
+
+
+
+//themes
+@import "./scss/themes/darktheme";
