@@ -1680,125 +1680,42 @@ a {
   text-decoration: none;
 }
 
-.button-formul {
-  margin: 20px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 15px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #030303;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.btn1_footer {
-  background-color: white;
-  color: #007c74;
-  border-radius: 10px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-}
-
-.btn-blanc-transparent {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.875rem;
-  border: #fff 2.5px solid;
-  border-radius: 5px;
-  padding: 10px 15px;
-}
-
-.btn2_footer {
-  background-color: #007c74;
-  color: white;
-  border-radius: 10px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-}
-
-.btn3_footer {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-}
-
-.btn4_footer {
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-}
-
 footer > div:nth-child(1) {
-  background: url(../../Image/qui-sommes-nous.jpg) no-repeat center center;
+  background-color: rgb(240, 217, 197);
   color: black;
-  display: flex;
-  flex-direction: column;
-  padding: 0 10%;
-}
-footer > div:nth-child(1) > div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-footer > div:nth-child(1) > div img {
-  width: 30px;
-}
-footer > div:nth-child(1) > div p {
-  max-width: 700px;
 }
 footer > div:nth-child(2) {
   background-color: white;
   color: black;
   display: flex;
   flex-direction: column;
-  padding: 0 10%;
-}
-footer > div:nth-child(2) a {
-  color: black;
 }
 footer > div:nth-child(3) {
   background-color: rgb(198, 198, 198);
   color: rgb(0, 0, 0);
   display: flex;
-  padding: 0 10%;
-  justify-content: space-between;
-  align-items: center;
-}
-footer > div:nth-child(3) p {
-  max-width: 700px;
+  justify-content: center;
 }
 footer > div:nth-child(4) {
   background-color: black;
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 0 0 10%;
-}
-footer > div:nth-child(4) a {
-  color: white;
 }
 
 .mapform {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 10;
-  max-width: 1800px;
 }
 .mapform .formule {
   background-color: #007c74;
-  padding: 30px;
+  padding: 30px 15px;
+  margin: 40px 0 0 0;
   font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
@@ -1819,6 +1736,18 @@ footer > div:nth-child(4) a {
   font-weight: 600;
   margin-bottom: 30px;
 }
+.mapform .formule .button {
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #030303;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
 
 .text {
   text-align: center;
@@ -1832,21 +1761,6 @@ footer > div:nth-child(4) a {
   color: #030303;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  position: relative;
-}
-.grid span {
-  display: inline-block;
-  font-family: "Mukta Mahee", sans-serif;
-  font-weight: 600;
-  font-size: 0.875rem;
-  padding: 5px 10px;
-  color: #fff;
-  background: #eea622;
-}
-
 .carousel {
   width: 100%;
   height: 500px;
@@ -1854,13 +1768,13 @@ footer > div:nth-child(4) a {
 }
 
 .carousel .slide {
-  width: 100%;
+  width: 600%;
   height: 100%;
   display: flex;
   position: absolute;
   top: 0;
   left: 0;
-  transition: transform 5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel .slide img {
@@ -1903,156 +1817,78 @@ footer > div:nth-child(4) a {
   background-color: #999;
 }
 
-#map {
-  height: 100%;
-}
-
-header > div:nth-child(2) {
-  position: relative;
-}
-
-nav {
-  position: sticky;
-  z-index: 100;
-  top: 0px;
-  width: 100%;
-}
 nav > div:nth-child(1) {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: aquamarine;
   display: flex;
   justify-content: space-between;
-}
-nav > div:nth-child(1) a {
-  color: white;
-}
-nav > div:nth-child(1) > div {
-  margin: 15px 0px;
 }
 nav > div:nth-child(2) {
-  padding: 0px 30px;
-  background-color: white;
+  background-color: aqua;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
-}
-nav > div:nth-child(2) img {
-  width: 30px;
-}
-nav > div:nth-child(2) > div {
-  margin: 15px 0px;
-}
-nav > div:nth-child(2) > div a {
-  padding: 0px 10px;
 }
 
-#section2 {
-  margin: 30vh 0 15vh 0;
+.savoir {
+  padding-left: 25%;
+  padding-right: 25%;
 }
-#section2 .row h2 {
-  margin-left: 25vw;
-  position: relative;
-}
-#section2 .row h2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -3%;
-  transform: translate(-50%, 0);
-  background-image: url("https://www.lavelomaritime.fr/themes/fvt/images/sprite.png?1627395053578");
-  background-position: -168px -18px;
-  width: 22px;
-  height: 32px;
-}
-#section2 .row p {
-  margin-left: 22.2vw;
-}
-#section2 .AccueilVelo {
-  display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: 20vw;
-}
-#section2 .AccueilVelo figure {
-  position: relative;
-  overflow: hidden;
-}
-#section2 .AccueilVelo figure:hover img {
-  filter: blur(7px);
-}
-#section2 .AccueilVelo figure a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 2;
-}
-#section2 .AccueilVelo figure img {
-  display: block;
-}
-#section2 .AccueilVelo figure figcaption {
-  position: absolute;
-  transform: translate(0, -50%);
-  z-index: 4;
-  width: 100%;
-  top: 50%;
-  color: #fff;
-  text-align: center;
-  font-size: 1.5rem;
+.savoir .page_savoir {
+  font-family: Poppins, sans-serif;
   font-weight: 700;
+  font-size: 1.875rem;
+  color: #231f20;
+  text-align: center;
+  margin: 0;
 }
-
-#section3 {
-  height: 80vh;
-  background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/temoignage.jpg") no-repeat;
-  background-size: cover;
-  color: #fff;
+.savoir .en_savoir {
+  font-size: 1.5rem;
+  color: #231f20;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
 }
-#section3 .row {
-  padding-top: 3vh;
-  margin: 2vh 20vw;
+.savoir .en_savoir1 {
+  font-size: 1.125rem;
+  color: #585858;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-top: 15px;
 }
-#section3 .row h2 {
-  font-size: 3em;
-  font-weight: 100;
-  margin-bottom: 0;
+.savoir .savoir_plus1 {
+  font-size: 1.125rem;
+  color: #585858;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-top: 15px;
 }
-#section3 .row p {
-  font-size: 1.2em;
-  margin-top: 1vh;
+.savoir .en_savoir_plus2 {
+  font-size: 1.125rem;
+  color: #585858;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-top: 15px;
 }
-#section3 .slider {
-  height: 35vh;
+.savoir .button_plus_savoir {
+  background-color: #00b9ca;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-decoration: none;
+  margin: 4px 2px 100px 2px;
+  border-radius: 5px;
 }
-#section3 .btn-blanc-transparent {
-  margin-left: 20vw;
+.savoir .button_savoir {
+  background-color: #00b9ca;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-decoration: none;
+  margin: 4px 2px 100px 2px;
+  border-radius: 5px;
 }
-
-#section6 {
-  height: 80vh;
-  background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/sejour.jpg") no-repeat;
-  background-size: cover;
-  color: #fff;
-}
-#section6 .row {
-  padding-top: 3vh;
-  margin: 2vh 20vw;
-}
-#section6 .row h2 {
-  font-size: 3em;
-  font-weight: 100;
-  margin-bottom: 0;
-}
-#section6 .row p {
-  font-size: 1.2em;
-  margin-top: 1vh;
-}
-#section6 .slider {
-  height: 35vh;
-}
-#section6 .btn-blanc-transparent {
-  margin-left: 20vw;
+.savoir .liste_savoir {
+  font-size: 1.125rem;
+  color: #585858;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-top: 15px;
 }/*# sourceMappingURL=main.css.map */
