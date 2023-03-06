@@ -1680,6 +1680,17 @@ a {
   text-decoration: none;
 }
 
+.btn-blanc-transparent {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: #fff 2.5px solid;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
 footer > div:nth-child(1) {
   background-color: rgb(240, 217, 197);
   color: black;
@@ -1826,4 +1837,115 @@ nav > div:nth-child(2) {
   background-color: aqua;
   display: flex;
   justify-content: space-between;
+}
+
+#section2 {
+  margin: 30vh 0 15vh 0;
+}
+#section2 .row h2 {
+  margin-left: 25vw;
+  position: relative;
+}
+#section2 .row h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3%;
+  transform: translate(-50%, 0);
+  background-image: url("https://www.lavelomaritime.fr/themes/fvt/images/sprite.png?1627395053578");
+  background-position: -168px -18px;
+  width: 22px;
+  height: 32px;
+}
+#section2 .row p {
+  margin-left: 22.2vw;
+}
+#section2 .AccueilVelo {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 20vw;
+}
+#section2 .AccueilVelo figure {
+  position: relative;
+  overflow: hidden;
+}
+#section2 .AccueilVelo figure:hover img {
+  filter: blur(7px);
+}
+#section2 .AccueilVelo figure a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+#section2 .AccueilVelo figure img {
+  display: block;
+}
+#section2 .AccueilVelo figure figcaption {
+  position: absolute;
+  transform: translate(0, -50%);
+  z-index: 4;
+  width: 100%;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#section3 {
+  height: 80vh;
+  background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/temoignage.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+#section3 .row {
+  padding-top: 3vh;
+  margin: 2vh 20vw;
+}
+#section3 .row h2 {
+  font-size: 3em;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+#section3 .row p {
+  font-size: 1.2em;
+  margin-top: 1vh;
+}
+#section3 .slider {
+  height: 35vh;
+}
+#section3 .btn-blanc-transparent {
+  margin-left: 20vw;
+}
+
+#section6 {
+  height: 80vh;
+  background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/sejour.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+#section6 .row {
+  padding-top: 3vh;
+  margin: 2vh 20vw;
+}
+#section6 .row h2 {
+  font-size: 3em;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+#section6 .row p {
+  font-size: 1.2em;
+  margin-top: 1vh;
+}
+#section6 .slider {
+  height: 35vh;
+}
+#section6 .btn-blanc-transparent {
+  margin-left: 20vw;
 }/*# sourceMappingURL=main.css.map */
