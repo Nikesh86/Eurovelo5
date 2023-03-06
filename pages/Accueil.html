@@ -6,14 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cycling.waymarkedtrails.org/api/v1/details/relation/5245117/geometry/gpx">
-    <link rel="stylesheet" href="../main.css">
-    <title>Accuil</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <title>Accueil</title>
 </head>
 
 <body>
 
     <header>
         <nav>
+            <!-- barre nav 1 -->
             <div>
                 <div>
                     <a href="">logo insta</a>
@@ -25,6 +36,7 @@
                     <a href="#"><img src="#" alt="pays"></a>
                 </div>
             </div>
+            <!-- barre nav 2 -->
             <div>
                 <div>
                     <a href="./Accueil.html"><img src="#" alt=""><img src="#" alt="eurovelo5"></a>
@@ -97,10 +109,14 @@
                     Avec une part importante de voies partagées, c’est un itinéraire vélo idéal pour les cyclistes en
                     recherche d’évasion, de défi, de découverte culturelle et gastronomique. Vous n’avez pas l’habitude
                     du
-                    vélo ? Profitez-en pour vous remettre en selle !
+                    vélo ? Profitez-en pour vous remettre en selle !</p>
+
+                <p> Téléchargez <a href="https://www.francevelotourisme.com/itineraire/eurovelo-5-moselle-alsace">ici</a> les tracés GPS complets de l'EuroVelo 5 - Via Romea (Francigena)
+                    en France et
+                    commencez à planifier vos prochaines vacances à vélo!
                 </p>
                 <img src="../Image/pictos-velodyssee3.jpg" alt="image">
-                
+
             </div>
         </article>
 
@@ -145,21 +161,13 @@
                     <option value="Bretagne">Bretagne</option>
                     <option value="Hauts-de-France">Hauts-de-France</option>
                 </select>
-                <button class="button">TOURVER MON PARCOURS IDEAL</button>
+                <button class="button-formul">TOURVER MON PARCOURS IDEAL</button>
             </form>
 
-            <div class="map">
-                <trkseg>
-                    ...
-                </trkseg>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8811177329244!2d2.288469115887942!3d48.86047730851352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe3411d2971%3A0xb51467f04765bff!2sAv.%20des%20Nations%20Unies%2C%2075116%20Paris!5e0!3m2!1sfr!2sfr!4v1676906313381!5m2!1sfr!2sfr"
-                    width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <div id="map"></div>
+
+            <div id="map"></div>
         </section>
-
-
 
 
     </header>
@@ -167,48 +175,70 @@
     <main>
 
         <section id="section2">
-            <h2>Trouver mon Accueil vélo</h2>
-            <p>Accueil Vélo est une marque qui garantit des services de qualité auprès des cyclistes le long de
-                l'itinéraire
-            </p>
+            <div class="row">
+                <h2>Trouver mon Accueil vélo</h2>
+                <p>
+                    Accueil Vélo est une marque qui garantit des services de qualité auprès des cyclistes le long de
+                    l'itinéraire
+                </p>
+            </div>
 
             <div class="AccueilVelo">
                 <figure>
-                    <img src="https://www.lavelomaritime.fr/themes/fvt/images/hebergements-920.png" alt="">
-                    <figcaption>Hébergement</figcaption>
+                    <a href="#">
+                        <img src="https://www.lavelomaritime.fr/themes/fvt/images/hebergements-920.png" alt="">
+                        <figcaption>Hébergement</figcaption>
+                    </a>
                 </figure>
+
                 <figure>
-                    <img src="https://www.lavelomaritime.fr/themes/fvt/images/restaurants-920.png" alt="">
-                    <figcaption>Restaurant</figcaption>
+                    <a href="">
+                        <img src="https://www.lavelomaritime.fr/themes/fvt/images/restaurants-920.png" alt="">
+                        <figcaption>Restaurant</figcaption>
+                    </a>
                 </figure>
 
-                <img src="https://www.lavelomaritime.fr/themes/fvt/images/lieux-visite-920.png" alt="">
-                <figcaption>Lieux de visite</figcaption>
+                <figure>
+                    <a href="">
+                        <img src="https://www.lavelomaritime.fr/themes/fvt/images/lieux-visite-920.png" alt="">
+                        <figcaption>Lieux de visite</figcaption>
+                    </a>
+                </figure>
 
-                <img src="https://www.lavelomaritime.fr/themes/fvt/images/office-tourisme-920.png" alt="">
-                <figcaption>Offices de tourisme</figcaption>
+                <figure>
+                    <a href="">
+                        <img src="https://www.lavelomaritime.fr/themes/fvt/images/office-tourisme-920.png" alt="">
+                        <figcaption>Offices de tourisme</figcaption>
+                    </a>
+                </figure>
 
-                <img src="https://www.lavelomaritime.fr/themes/fvt/images/loueurs-920.png" alt="">
-                <figcaption>Loueurs & réparateurs de vélo</figcaption>
+                <figure>
+                    <a href="">
+                        <img src="https://www.lavelomaritime.fr/themes/fvt/images/loueurs-920.png" alt="">
+                        <figcaption>Loueurs & réparateurs de vélo</figcaption>
+                    </a>
+                </figure>
             </div>
 
         </section>
 
         <section id="section3">
-            <h2>Il·elle·s l'ont fait !</h2>
-            <p>
-                Plutôt vélo de route, VTC ou VTT ? Si vous hésitez à vous lancer, lisez le témoignage de ceux qui ont
-                expérimenté cet itinéraire à vélo avant vous ! En solo, en famille ou entre amis, il·elle·s ont parcouru
-                La
-                Vélomaritime en entier ou en partie. Retrouvez leurs coups de cœur sur la route, leurs étapes favorites
-                et
-                tous leurs conseils !
-            </p>
+            <div class="row">
+                <h2>Il·elle·s l'ont fait !</h2>
+                <p>
+                    Plutôt vélo de route, VTC ou VTT ? Si vous hésitez à vous lancer, lisez le témoignage de ceux qui ont
+                    expérimenté cet itinéraire à vélo avant vous ! En solo, en famille ou entre amis, il·elle·s ont parcouru
+                    La
+                    Vélomaritime en entier ou en partie. Retrouvez leurs coups de cœur sur la route, leurs étapes favorites
+                    et
+                    tous leurs conseils !
+                </p>
+            </div>
 
-            <div>
+            <div class="slider">
                 <!-- slider -->
             </div>
-            <a href="#">Tous les témoignages</a>
+            <a class="btn-blanc-transparent" href="#">Tous les témoignages</a>
         </section>
 
         <section id="section4">
@@ -232,7 +262,8 @@
         </section>
 
         <section id="section5">
-            <h2>Rejoignez l'aventure !</h2>
+            <div class="text">
+                <h2>Rejoignez l'aventure !</h2>
             <p>
                 Découvrez toutes nos idées pour un week-end, les nouveautés et tutos pour s'élancer sur La Vélomaritime
                 !
@@ -240,7 +271,9 @@
                 est à
                 portée de main.
             </p>
-
+        </div>
+<div class="grids">
+            <figure class="box1">
             <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/Leffrinckoucke-1920.webp?h=e5aec6c8&itok=Fywjoq2h"
                 alt="">
             <figcaption>
@@ -249,6 +282,7 @@
                 <a href="#">La Vélomaritime, c'est quoi ?</a>
             </figcaption>
 
+            <figure class="box2">
             <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/eb-replay.webp?h=ffe3ebf3&itok=8I8wEYl7"
                 alt="">
             <figcaption>
@@ -257,6 +291,7 @@
                 <a href="#">L'épisode d'Échappées Belles consacré à La Vélomaritime</a>
             </figcaption>
 
+            <figure class="box3">
             <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/crtb-ad3160_berthier-emmanuel.webp?h=44ddf43b&itok=8J9UtMp7"
                 alt="">
             <figcaption>
@@ -265,7 +300,7 @@
                 <a href="#">La Vélomaritime de phares en phares</a>
             </figcaption>
 
-            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/1.vue_sur_le_site_des_deux-caps_ce._desaunois.webp?h=0bc8bfcd&itok=4TLo7cX7"
+            <figure class="box4"><img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/1.vue_sur_le_site_des_deux-caps_ce._desaunois.webp?h=0bc8bfcd&itok=4TLo7cX7"
                 alt="">
             <figcaption>
                 <span>À découvrir</span>
@@ -273,7 +308,7 @@
                 <a href="#">Les sites incontournables le long de La Vélomaritime</a>
             </figcaption>
 
-            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/1_14_Seineavelo_DDarrault-9222.webp?h=e5aec6c8&itok=SqC-DJdj"
+            <figure class="box5"><img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/1_14_Seineavelo_DDarrault-9222.webp?h=e5aec6c8&itok=SqC-DJdj"
                 alt="">
             <figcaption>
                 <span>Organisation</span>
@@ -281,7 +316,7 @@
                 <a href="#">Comment organiser son voyage à vélo ?</a>
             </figcaption>
 
-            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/velomaritime-faq.webp?h=9379de74&itok=GRfOFd2n"
+            <figure class="box6"><img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/velomaritime-faq.webp?h=9379de74&itok=GRfOFd2n"
                 alt="">
             <figcaption>
                 <span>Pratique</span>
@@ -289,7 +324,7 @@
                 <a href="#">Foire aux questions</a>
             </figcaption>
 
-            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/22-camping-cap-de-brehat-bivouac-hauteur.webp?h=10d202d3&itok=TQm_6CjX"
+            <figure class="box7"><img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/22-camping-cap-de-brehat-bivouac-hauteur.webp?h=10d202d3&itok=TQm_6CjX"
                 alt="">
             <figcaption>
                 <span>Bonnes adresses</span>
@@ -298,7 +333,7 @@
                 <div class="accroche">Des solutions adaptées pour le tourisme à vélo</div>
             </figcaption>
 
-            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/visuel_signalement_%20nouvelle%20version%20avec%20logo.webp?h=3960caa2&itok=flUOnKdD"
+            <figure class="box8"><img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/visuel_signalement_%20nouvelle%20version%20avec%20logo.webp?h=3960caa2&itok=flUOnKdD"
                 alt="">
             <figcaption>
                 <span>Pratique</span>
@@ -306,7 +341,7 @@
                 <a href="#">Signalez / consultez des anomalies sur La Vélomaritime</a>
             </figcaption>
 
-            <img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/lunettes-friendly-frenchy-la-velomaritime.webp?h=1db28fbb&itok=c1LA6Hcg"
+            <figure class="box9"><img src="https://www.lavelomaritime.fr/sites/eurovelo4/files/styles/1x1/public/medias/images/lunettes-friendly-frenchy-la-velomaritime.webp?h=1db28fbb&itok=c1LA6Hcg"
                 alt="">
             <figcaption>
                 <span>Partenariat</span>
@@ -316,19 +351,21 @@
         </section>
 
         <section id="section6">
-            <h2>Partez en voyage, ils organisent tout pour vous !</h2>
-            <p>
-                Pas envie de préparer vos vacances ? Premier voyage à vélo ? Des agences de voyages spécialisées en vélo
-                ont
-                l'habitude d'organiser vos aventures à deux roues. Les experts vous proposent des séjours clés en main.
-                De
-                quoi partir serein et l'esprit libre sur cet itinéraire à vélo avec un voyage conçu selon vos envies !
-            </p>
+            <div class="row">
+                <h2>Partez en voyage, ils organisent tout pour vous !</h2>
+                <p>
+                    Pas envie de préparer vos vacances ? Premier voyage à vélo ? Des agences de voyages spécialisées en vélo
+                    ont
+                    l'habitude d'organiser vos aventures à deux roues. Les experts vous proposent des séjours clés en main.
+                    De
+                    quoi partir serein et l'esprit libre sur cet itinéraire à vélo avec un voyage conçu selon vos envies !
+                </p>
+            </div>
 
-            <div>
+            <div class="slider">
                 <!-- slider -->
             </div>
-            <a href="#">Tous les séjours</a>
+            <a class="btn-blanc-transparent" href="#">Tous les séjours</a>
         </section>
 
     </main>
@@ -338,11 +375,22 @@
         <div>
             <div>
                 <div>
-                    <a href="./Accueil.html"><img src="" alt=""><img src="" alt="eurovelo5"></a>
+                    <a href="./Accueil.html"><img src="" alt=""><img src="/Image/ed210af3-1631-4702-b9f0-dfdffbdfedc8.png" alt="eurovelo5"></a>
                 </div>
                 <div>
-                    <a href="https://www.instagram.com/">logo insta</a>
-                    <a href="https://www.facebook.com/">logo facebook</a>
+                    <a href="https://www.instagram.com/"><span class="ti-instagram"></span></a>
+                    <a href="https://www.facebook.com/"><span class="ti-facebook"></span></a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Qui sommes-nous</p>
+                    <p>La Vélomaritime est un itinéraire vélo développé et promu par un réseau de collectivités
+                        territoriales et leurs institutions touristiques.</p>
+                </div>
+                <div>
+                    <a class="btn1_footer" href="">en savoir</a>
+                    <a class="btn2_footer" href="">nous contacter</a>
                 </div>
             </div>
         </div>
@@ -357,14 +405,18 @@
         </div>
         <!-- footer 3 -->
         <div>
-            <img src="#" alt="#">
             <div>
-                <p>La marque Accueil Vélo qu'est ce que c'est ?</p>
-                <p>Accueil Vélo est une marque nationale qui garantit un accueil et des services de qualité auprès des
-                    cyclistes le long des itinéraires cyclables.</p>
+                <img src="#" alt="#">
+                <div>
+                    <p>La marque Accueil Vélo qu'est ce que c'est ?</p>
+                    <p>Accueil Vélo est une marque nationale qui garantit un accueil et des services de qualité auprès des
+                        cyclistes le long des itinéraires cyclables.</p>
+                </div>
             </div>
-            <a href="">en savoir</a>
-            <a href="">devenir accueil vélo</a>
+            <div>
+                <a class="btn3_footer" href="">en savoir</a>
+                <a class="btn4_footer" href="">devenir accueil vélo</a>
+            </div>
         </div>
         <!-- footer 4 -->
         <div>
@@ -378,7 +430,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 
 </body>
 
