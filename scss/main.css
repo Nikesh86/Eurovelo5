@@ -1695,7 +1695,7 @@ a {
 
 .btn1_footer {
   background-color: white;
-  color: blue;
+  color: #007c74;
   border-radius: 10px;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -1713,7 +1713,7 @@ a {
 }
 
 .btn2_footer {
-  background-color: blue;
+  background-color: #007c74;
   color: white;
   border-radius: 10px;
   padding: 10px 20px;
@@ -1897,26 +1897,37 @@ footer > div:nth-child(4) a {
   height: 100%;
 }
 
+header > div:nth-child(2) {
+  position: relative;
+}
+
 nav {
-  position: absolute;
-  top: 0;
+  position: sticky;
+  z-index: 100;
+  top: 0px;
   width: 100%;
 }
 nav > div:nth-child(1) {
-  background-color: aquamarine;
+  background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: space-between;
+}
+nav > div:nth-child(1) a {
+  color: white;
 }
 nav > div:nth-child(1) > div {
   margin: 15px 0px;
 }
 nav > div:nth-child(2) {
-  position: sticky;
   padding: 0px 30px;
-  background-color: aqua;
+  background-color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-transform: uppercase;
+}
+nav > div:nth-child(2) img {
+  width: 30px;
 }
 nav > div:nth-child(2) > div {
   margin: 15px 0px;
