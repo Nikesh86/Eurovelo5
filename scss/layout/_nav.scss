@@ -1,12 +1,30 @@
 nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
     >div:nth-child(1){
         background-color: aquamarine;
         display: flex;
         justify-content: space-between;
+
+        >div{
+            margin: 15px 0px;
+        }
     }
     >div:nth-child(2){
+        position: sticky;
+        padding: 0px 30px;
         background-color: aqua;
         display: flex;
         justify-content: space-between;
+        text-transform: uppercase;
+        
+        >div{
+            margin: 15px 0px;
+
+            a{
+                padding: 0px 10px;
+            }
+        }
     }
 }
