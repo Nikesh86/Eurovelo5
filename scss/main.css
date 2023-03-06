@@ -1835,7 +1835,12 @@ footer > div:nth-child(4) a {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.grid figure {
   position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .grid span {
   display: inline-block;
@@ -1845,6 +1850,12 @@ footer > div:nth-child(4) a {
   padding: 5px 10px;
   color: #fff;
   background: #eea622;
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+.grid img {
+  width: 100%;
 }
 
 .carousel {
