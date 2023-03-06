@@ -1680,29 +1680,88 @@ a {
   text-decoration: none;
 }
 
+.btn1_footer {
+  background-color: white;
+  color: blue;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.btn2_footer {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.btn3_footer {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.btn4_footer {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
 footer > div:nth-child(1) {
-  background-color: rgb(240, 217, 197);
+  background: url(../../Image/qui-sommes-nous.jpg) no-repeat center center;
   color: black;
   display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+footer > div:nth-child(1) > div {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+footer > div:nth-child(1) > div img {
+  width: 30px;
+}
+footer > div:nth-child(1) > div p {
+  max-width: 700px;
 }
 footer > div:nth-child(2) {
   background-color: white;
   color: black;
   display: flex;
   flex-direction: column;
+  padding: 0 10%;
+}
+footer > div:nth-child(2) a {
+  color: black;
 }
 footer > div:nth-child(3) {
   background-color: rgb(198, 198, 198);
   color: rgb(0, 0, 0);
   display: flex;
-  justify-content: center;
+  padding: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > div:nth-child(3) p {
+  max-width: 700px;
 }
 footer > div:nth-child(4) {
   background-color: black;
   color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 10%;
+}
+footer > div:nth-child(4) a {
+  color: white;
 }
 
 .mapform {
@@ -1817,13 +1876,30 @@ footer > div:nth-child(4) {
   background-color: #999;
 }
 
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 nav > div:nth-child(1) {
   background-color: aquamarine;
   display: flex;
   justify-content: space-between;
 }
+nav > div:nth-child(1) > div {
+  margin: 15px 0px;
+}
 nav > div:nth-child(2) {
+  position: sticky;
+  padding: 0px 30px;
   background-color: aqua;
   display: flex;
   justify-content: space-between;
+  text-transform: uppercase;
+}
+nav > div:nth-child(2) > div {
+  margin: 15px 0px;
+}
+nav > div:nth-child(2) > div a {
+  padding: 0px 10px;
 }/*# sourceMappingURL=main.css.map */
