@@ -1,23 +1,41 @@
+header{
+    >div:nth-child(2){
+        position: relative;
+    }
+}
+
 nav{
-    position: absolute;
-    top: 0;
+    position: sticky;
+    z-index: 100;
+    top: 0px;
     width: 100%;
+    
     >div:nth-child(1){
-        background-color: aquamarine;
+        background-color: rgba(255, 255, 255, 0);
         display: flex;
         justify-content: space-between;
+
+        a{
+            color: white;
+        }
 
         >div{
             margin: 15px 0px;
         }
     }
     >div:nth-child(2){
-        position: sticky;
+        // position: sticky;
+        // top: 0px;
         padding: 0px 30px;
-        background-color: aqua;
+        background-color: white;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         text-transform: uppercase;
+
+        img{
+            width: 30px;
+        }
         
         >div{
             margin: 15px 0px;
