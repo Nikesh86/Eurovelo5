@@ -9,9 +9,10 @@ var gpx = '/gpx/gpx.xml'; // URL to your GPX file or the GPX itself
 new L.GPX(gpx, {
   async: true,
   marker_options: {
-    startIconUrl: '/image/pin-icon-start.png',
-    endIconUrl: '/images/pin-icon-end.png',
-    shadowUrl: '/images/pin-shadow.png',
+    startIconUrl: null,
+    endIconUrl: null,
+    shadowUrl: null,
+    
   }
 
 }).on('loaded', function (e) {
