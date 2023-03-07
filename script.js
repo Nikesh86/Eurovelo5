@@ -33,7 +33,7 @@ let sliderImages = document.querySelectorAll(".slide"),
     // Clear all images
     function reset() {
     for (let i = 0; i < sliderImages.length; i++) {
-    	sliderImages[i].style.display = "none";
+    sliderImages[i].style.display = "none";
         }
     }
     

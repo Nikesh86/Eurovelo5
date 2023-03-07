@@ -13,8 +13,11 @@
 
 }
 .button-calculer{
-    background-color: #00b9ca;
-    color: #fff;
+    background-color: $color1;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
     
 }
 

@@ -1694,8 +1694,11 @@ a {
 }
 
 .button-calculer {
-  background-color: #00b9ca;
-  color: #fff;
+  background-color: #007c74;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
 
 .btn1_footer {
