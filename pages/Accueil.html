@@ -57,44 +57,25 @@
 
 
         <!-- Slideshow container à voir -->
-
+<div class="container">
         <div class="centered">
             <h1>La Vélomaritime</h1>
             <h2>Une expérience unique à la découverte de perles rares</h2>
         </div>
-        <div class="carousel">
-            <input type="radio" name="carousel" id="image1" checked>
-            <input type="radio" name="carouse1" id="image2">
-            <input type="radio" name="carouse1" id="image3">
-            <input type="radio" name="carouse1" id="image4">
-            <input type="radio" name="carouse1" id="image5">
-            <input type="radio" name="carouse1" id="image6">
-
-            <div class="slide">
-                <img src="../Image/romania-velo.jpg" alt="velo">
-                <img src="../Image/sunset-velo.jpg" alt="sunset velo">
-                <img src="../Image/to-go-biking-g1c66c60cb_1920.jpg" alt="to-go-biking">
-                <img src="../Image/family-velo.jpg" alt="family velo">
-                <img src="../Image/to-go-biking-2.jpg" alt="to-go-biking-2">
-                <img src="../Image/to-go-biking.jpg" alt=" biking">
-            </div>
-            <div class="navigation">
-                <label for="image1"></label>
-                <label for="image2"></label>
-                <label for="image3"></label>
-                <label for="image4"></label>
-                <label for="image5"></label>
-                <label for="image6"></label>
-            </div>
-        </div>
+       
+        <div id="arrow-left" class="arrow"></div>
+        <div class="slide slide1"></div>
+        <div class="slide slide2"></div>
+        <div class="slide slide3"></div>
+        <div id="arrow-right" class="arrow"></div>
+  
 
 
-        <div class="bottn">
-        </div>
+        <div class="place">
         <div><input type="text" placeholder="Lieu de départ"></div>
         <div><input type="text" placeholder="Lieu d'arrive"></div>
-        <a href="#">CALCULER MON ITINERAIRE</a>
-
+        <button class=" button-calculer">CALCULER MON ITINERAIRE</button>
+    </div>
 
         <article>
             <div class="text">
@@ -169,7 +150,6 @@
 
             <div id="map"></div>
 
-            <div id="map"></div>
         </section>
 
 
@@ -286,7 +266,7 @@
                         alt="">
                     <figcaption>
                         <span>Informations générales</span>
-                        <a href="#">♡</a>
+                        <div class="icon" href="#">♡</div>
                         <a href="https://www.lavelomaritime.fr/infos-pratiques/la-velomaritime-amenagement">La Vélomaritime, c'est quoi ?</a>
                     </figcaption>
                 </figure>
@@ -296,7 +276,7 @@
                         alt="">
                     <figcaption>
                         <span>À revoir 🎥</span>
-                        <a href="#">♡</a>
+                        <div class="icon" href="#">♡</div>
                         <a href="https://www.lavelomaritime.fr/echappees-belles">L'épisode d'Échappées Belles consacré à La Vélomaritime</a>
                     </figcaption>
                 </figure>
@@ -306,7 +286,7 @@
                         alt="">
                     <figcaption>
                         <span>À découvrir</span>
-                        <a href="#">♡</a>
+                        <div class="icon" href="#">♡</div>
                         <a href="#">La Vélomaritime de phares en phares</a>
                     </figcaption>
                 </figure>
@@ -316,7 +296,7 @@
                         alt="">
                     <figcaption>
                         <span>À découvrir</span>
-                        <a href="#">♡</a>
+                        <div class="icon" href="#">♡</div>
                         <a href="#">Les sites incontournables le long de La Vélomaritime</a>
                     </figcaption>
                 </figure>
@@ -326,7 +306,7 @@
                         alt="">
                     <figcaption>
                         <span>Organisation</span>
-                        <a href="#">♡</a>
+                        <div class="icon" href="#">♡</div>
                         <a href="#">Comment organiser son voyage à vélo ?</a>
                     </figcaption>
                 </figure>
@@ -336,7 +316,7 @@
                         alt="">
                     <figcaption>
                         <span>Pratique</span>
-                        <a href="#">♡</a>
+                        <div class="icon" href="#">♡</div>
                         <a href="#">Foire aux questions</a>
                     </figcaption>
                 </figure>
@@ -346,9 +326,9 @@
                         alt="">
                     <figcaption>
                         <span>Bonnes adresses</span>
-                        <a href="#">♡</a>
+                        <div class="icon" href="#">♡</div>
                         <a href="#">Voyagez léger</a>
-                        <div class="accroche">Des solutions adaptées pour le tourisme à vélo</div>
+                        <a href="#">Des solutions adaptées pour le tourisme à vélo</a>
                     </figcaption>
                 </figure>
 
@@ -357,7 +337,7 @@
                         alt="">
                     <figcaption>
                         <span>Pratique</span>
-                        <a href="#">♡</a>
+                        <div class="icon" href="#">♡</div>
                         <a href="#">Signalez / consultez des anomalies sur La Vélomaritime</a>
                     </figcaption>
                 </figure>
@@ -367,7 +347,7 @@
                         alt="">
                     <figcaption>
                         <span>Partenariat</span>
-                        <a href="#">♡</a>
+                        <div class="icon" href="#">♡</div>
                         <a href="#">Les lunettes en coquillage®</a>
                     </figcaption>
                 </figure>

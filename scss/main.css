@@ -1693,6 +1693,11 @@ a {
   transition: background-color 0.3s ease-in-out;
 }
 
+.button-calculer {
+  background-color: #00b9ca;
+  color: #fff;
+}
+
 .btn1_footer {
   background-color: white;
   color: #007c74;
@@ -1842,6 +1847,22 @@ footer > div:nth-child(4) a {
   width: -moz-fit-content;
   width: fit-content;
 }
+.grid figure a {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  margin: 20px 20px 20px 20px;
+}
+.grid .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-size: 2em;
+}
 .grid span {
   display: inline-block;
   font-family: "Mukta Mahee", sans-serif;
@@ -1854,8 +1875,15 @@ footer > div:nth-child(4) a {
   top: 0;
   left: 40%;
 }
-.grid img {
-  width: 100%;
+
+.grid > img {
+  transition: transform 0.2s;
+}
+
+img:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.2);
+  filter: blur(5px);
 }
 
 .carousel {
@@ -1955,6 +1983,77 @@ nav > div:nth-child(2) > div {
 }
 nav > div:nth-child(2) > div a {
   padding: 0px 10px;
+}
+
+.slide {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 600px;
+  overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("../../Image/romania-velo.jpg");
+}
+
+.slide2 {
+  background-image: url("../../Image/bike.jpg");
+}
+
+.slide3 {
+  background-image: url("../../Image/to-go-biking-2.jpg");
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 20px;
+}
+
+#arrow-right {
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 20px;
+}
+
+.container .centered {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1em;
+  transform: translate(0, -50%);
+}
+.container h1 {
+  font-size: 3.5rem;
+}
+.container .place {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 10px;
 }
 
 #section2 {
