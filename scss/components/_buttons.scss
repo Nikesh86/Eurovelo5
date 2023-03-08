@@ -12,6 +12,15 @@
             transition: background-color 0.3s ease-in-out;
 
 }
+.button-calculer{
+    background-color: $color1;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    
+}
+
 // button
 .btn1_footer{
     background-color: white;
@@ -56,3 +65,4 @@
     padding: 10px 20px;
     text-transform: uppercase;
 }
+
