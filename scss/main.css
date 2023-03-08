@@ -1745,40 +1745,40 @@ a {
   text-transform: uppercase;
 }
 
-.swiper-container {
+#section3 .swiper-container {
   height: 40vh;
   margin-left: 1vw;
 }
-.swiper-container .swiper {
+#section3 .swiper-container .swiper {
   width: 100%;
   height: 100%;
 }
-.swiper-container .swiper-slide {
+#section3 .swiper-container .swiper-slide {
   text-align: center;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.swiper-container .swiper-slide img {
+#section3 .swiper-container .swiper-slide img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.swiper-container figure {
+#section3 .swiper-container figure {
   position: relative;
   overflow: hidden;
 }
-.swiper-container figure:hover img {
+#section3 .swiper-container figure:hover img {
   filter: blur(8px);
   transition: 0.25s transform;
   transform: scale(1.2);
 }
-.swiper-container figure:hover figcaption {
+#section3 .swiper-container figure:hover figcaption {
   bottom: 18%;
   transition: 0.25s;
 }
-.swiper-container figure figcaption {
+#section3 .swiper-container figure figcaption {
   position: absolute;
   transform: translate(0, -50%);
   width: 100%;
@@ -1788,10 +1788,73 @@ a {
   font-weight: 600;
   font-size: 1rem;
 }
-.swiper-container figure figcaption span {
+#section3 .swiper-container figure figcaption span {
   font-size: 1.75rem;
 }
-.swiper-container .swiper-button-next, .swiper-container .swiper-button-prev {
+#section3 .swiper-container .swiper-button-next, #section3 .swiper-container .swiper-button-prev {
+  background-color: #fff;
+}
+
+#section6 .swiper-container {
+  height: 40vh;
+  margin-left: 1vw;
+}
+#section6 .swiper-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+#section6 .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section6 .swiper-container .swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#section6 .swiper-container figure {
+  position: relative;
+  overflow: hidden;
+}
+#section6 .swiper-container figure:hover img {
+  filter: blur(8px);
+  transition: 0.25s transform;
+  transform: scale(1.2);
+}
+#section6 .swiper-container figure span {
+  font-size: 1rem;
+  z-index: 2;
+}
+#section6 .swiper-container figure .prix {
+  position: absolute;
+  top: 5%;
+  right: 50%;
+  color: #fff;
+  background-color: orange;
+  padding: 5px 10px;
+}
+#section6 .swiper-container figure .duree {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  color: black;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+#section6 .swiper-container figure figcaption {
+  position: absolute;
+  transform: translate(0, -50%);
+  width: 100%;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+#section6 .swiper-container .swiper-button-next, #section6 .swiper-container .swiper-button-prev {
   background-color: #fff;
 }
 
@@ -2140,20 +2203,11 @@ nav > div:nth-child(2) > div a {
   overflow: hidden;
 }
 #section2 .AccueilVelo figure:hover img {
-  filter: blur(7px);
-}
-#section2 .AccueilVelo figure a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 2;
+  filter: blur(7px) brightness(0.4);
 }
 #section2 .AccueilVelo figure img {
   display: block;
+  filter: brightness(0.4);
 }
 #section2 .AccueilVelo figure figcaption {
   position: absolute;
@@ -2191,7 +2245,7 @@ nav > div:nth-child(2) > div a {
 }
 
 #section6 {
-  height: 80vh;
+  height: 70vh;
   background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/sejour.jpg") no-repeat;
   background-size: cover;
   color: #fff;
