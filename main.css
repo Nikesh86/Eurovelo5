@@ -1714,7 +1714,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   border: #fff 2.5px solid;
   border-radius: 5px;
   padding: 10px 15px;
@@ -1879,11 +1879,10 @@ footer > div:nth-child(4) a {
   left: 40%;
 }
 
-.grid > img {
+#section5 img {
   transition: transform 0.2s;
 }
-
-img:hover {
+#section5 img img:hover {
   transition: transform 0.5s ease;
   transform: scale(1.2);
   filter: blur(5px);
@@ -2051,4 +2050,8 @@ nav > div:nth-child(2) > div a {
   line-height: 1.5em;
   text-align: justify;
   margin-top: 15px;
+}
+.savoir .image_savoir {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
