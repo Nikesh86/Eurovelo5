@@ -1706,7 +1706,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   border: #fff 2.5px solid;
   border-radius: 5px;
   padding: 10px 15px;
@@ -1735,6 +1735,56 @@ a {
   border-radius: 10px;
   padding: 10px 20px;
   text-transform: uppercase;
+}
+
+.swiper-container {
+  height: 40vh;
+  margin-left: 1vw;
+}
+.swiper-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-container .swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiper-container figure {
+  position: relative;
+  overflow: hidden;
+}
+.swiper-container figure:hover img {
+  filter: blur(8px);
+  transition: 0.25s transform;
+  transform: scale(1.2);
+}
+.swiper-container figure:hover figcaption {
+  bottom: 18%;
+  transition: 0.25s;
+}
+.swiper-container figure figcaption {
+  position: absolute;
+  transform: translate(0, -50%);
+  width: 100%;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.swiper-container figure figcaption span {
+  font-size: 1.75rem;
+}
+.swiper-container .swiper-button-next, .swiper-container .swiper-button-prev {
+  background-color: #fff;
 }
 
 footer > div:nth-child(1) {
@@ -1871,11 +1921,10 @@ footer > div:nth-child(4) a {
   left: 40%;
 }
 
-img {
+#section5 img {
   transition: transform 0.2s;
 }
-
-img:hover {
+#section5 img img:hover {
   transition: transform 0.5s ease;
   transform: scale(1.2);
   filter: blur(5px);
@@ -2040,7 +2089,7 @@ nav > div:nth-child(2) > div a {
 }
 
 #section3 {
-  height: 80vh;
+  height: 70vh;
   background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/temoignage.jpg") no-repeat;
   background-size: cover;
   color: #fff;
@@ -2058,11 +2107,8 @@ nav > div:nth-child(2) > div a {
   font-size: 1.2em;
   margin-top: 1vh;
 }
-#section3 .slider {
-  height: 35vh;
-}
 #section3 .btn-blanc-transparent {
-  margin-left: 20vw;
+  margin-left: 10vw;
 }
 
 #section6 {
@@ -2088,5 +2134,5 @@ nav > div:nth-child(2) > div a {
   height: 35vh;
 }
 #section6 .btn-blanc-transparent {
-  margin-left: 20vw;
+  margin-left: 10vw;
 }/*# sourceMappingURL=main.css.map */
