@@ -13,8 +13,11 @@
 
 }
 .button-calculer{
-    background-color: #00b9ca;
-    color: #fff;
+    background-color: $color1;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
     
 }
 
@@ -32,7 +35,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     border: #fff 2.5px solid;
     border-radius: 5px;
     padding: 10px 15px;

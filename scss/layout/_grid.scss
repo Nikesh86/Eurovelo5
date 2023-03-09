@@ -14,7 +14,7 @@
         font-weight: 600;
         color: #fff;
         text-align: center;
-    
+
 
         select {
             padding: 10px 15px;
@@ -32,7 +32,7 @@
             font-weight: 600;
             margin-bottom: 30px;
         }
-}
+    }
 
 }
 
@@ -43,57 +43,71 @@
     font-size: 1.125rem;
     color: #585858;
     line-height: 1.5em;
-    h2{
+
+    h2 {
         font-size: 2.5rem;
         color: #030303;
     }
 }
 
 // grid section 5//
-.grid{
-display: grid;
-grid-template-columns: repeat(3,1fr);
-gap: 10px;
-figure{
-    position: relative;
-    width: fit-content;
-    a{
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        font-weight: 600;
-        font-size: 20px;
-        color: #fff;
-        margin: 20px 20px 20px 20px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 0 10vw;
+
+    figure {
+        position: relative;
+        overflow: hidden;
+        width: fit-content;
+
+        &:hover {
+
+            img {
+                filter: blur(8px);
+                transition: 0.4s transform;
+                transform: scale(1.2);
+            }
+
+            a {
+                bottom: 30%;
+                transition: 0.25s;
+            }
+        }
+
+        a {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 20px;
+            color: #fff;
+            margin: 5% 25%;
+        }
+
     }
-  
+
+    .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        font-size: 2em;
+    }
+
+    span {
+        display: inline-block;
+        font-family: "Mukta Mahee", sans-serif;
+        font-weight: 600;
+        font-size: .875rem;
+        padding: 5px 10px;
+        color: #fff;
+        background: #eea622;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
 }
-.icon{
-position: absolute;
-top: 0;
-right: 0;
-color: #fff;
-font-size: 2em;
-}
-span{
-    display: inline-block;
-    font-family: "Mukta Mahee",sans-serif;
-    font-weight: 600;
-    font-size: .875rem;
-    padding: 5px 10px;
-    color: #fff;
-    background: #eea622; 
-    position: absolute;
-    top: 0;
-    left:40%;   
-}
-}
-.grid>img {
-    transition: transform 0.2s; 
-  }
-  img:hover { 
-    transition: transform .5s ease;
-    transform: scale(1.2);
-    filter: blur(5px);
-  }
-  

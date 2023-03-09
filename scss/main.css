@@ -1695,8 +1695,11 @@ a {
 }
 
 .button-calculer {
-  background-color: #00b9ca;
-  color: #fff;
+  background-color: #007c74;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
 
 .btn1_footer {
@@ -1712,7 +1715,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   border: #fff 2.5px solid;
   border-radius: 5px;
   padding: 10px 15px;
@@ -1743,7 +1746,121 @@ a {
   text-transform: uppercase;
 }
 
+#section3 .swiper-container {
+  height: 40vh;
+  margin-left: 1vw;
+}
+#section3 .swiper-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+#section3 .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section3 .swiper-container .swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#section3 .swiper-container figure {
+  position: relative;
+  overflow: hidden;
+}
+#section3 .swiper-container figure:hover img {
+  filter: blur(8px);
+  transition: 0.25s transform;
+  transform: scale(1.2);
+}
+#section3 .swiper-container figure:hover figcaption {
+  bottom: 18%;
+  transition: 0.25s;
+}
+#section3 .swiper-container figure figcaption {
+  position: absolute;
+  transform: translate(0, -50%);
+  width: 100%;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+#section3 .swiper-container figure figcaption span {
+  font-size: 1.75rem;
+}
+#section3 .swiper-container .swiper-button-next, #section3 .swiper-container .swiper-button-prev {
+  background-color: #fff;
+}
+
+#section6 .swiper-container {
+  height: 40vh;
+  margin-left: 1vw;
+}
+#section6 .swiper-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+#section6 .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section6 .swiper-container .swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#section6 .swiper-container figure {
+  position: relative;
+  overflow: hidden;
+}
+#section6 .swiper-container figure:hover img {
+  filter: blur(8px);
+  transition: 0.25s transform;
+  transform: scale(1.2);
+}
+#section6 .swiper-container figure span {
+  font-size: 1rem;
+  z-index: 2;
+}
+#section6 .swiper-container figure .prix {
+  position: absolute;
+  top: 5%;
+  right: 50%;
+  color: #fff;
+  background-color: orange;
+  padding: 5px 10px;
+}
+#section6 .swiper-container figure .duree {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  color: black;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+#section6 .swiper-container figure figcaption {
+  position: absolute;
+  transform: translate(0, -50%);
+  width: 100%;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+#section6 .swiper-container .swiper-button-next, #section6 .swiper-container .swiper-button-prev {
+  background-color: #fff;
+}
+
 footer > div:nth-child(1) {
+  height: 40vh;
   background: url(../../Image/qui-sommes-nous.jpg) no-repeat center center;
   color: black;
   display: flex;
@@ -1841,12 +1958,24 @@ footer > div:nth-child(4) a {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin: 0 10vw;
 }
 .grid figure {
   position: relative;
+  overflow: hidden;
   width: -moz-fit-content;
   width: fit-content;
+}
+.grid figure:hover img {
+  filter: blur(8px);
+  transition: 0.4s transform;
+  transform: scale(1.2);
+}
+.grid figure:hover a {
+  bottom: 30%;
+  transition: 0.25s;
 }
 .grid figure a {
   position: absolute;
@@ -1855,7 +1984,7 @@ footer > div:nth-child(4) a {
   font-weight: 600;
   font-size: 20px;
   color: #fff;
-  margin: 20px 20px 20px 20px;
+  margin: 5% 25%;
 }
 .grid .icon {
   position: absolute;
@@ -1874,17 +2003,8 @@ footer > div:nth-child(4) a {
   background: #eea622;
   position: absolute;
   top: 0;
-  left: 40%;
-}
-
-.grid > img {
-  transition: transform 0.2s;
-}
-
-img:hover {
-  transition: transform 0.5s ease;
-  transform: scale(1.2);
-  filter: blur(5px);
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .carousel {
@@ -2089,20 +2209,11 @@ nav > div:nth-child(2) > div a {
   overflow: hidden;
 }
 #section2 .AccueilVelo figure:hover img {
-  filter: blur(7px);
-}
-#section2 .AccueilVelo figure a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 2;
+  filter: blur(7px) brightness(0.4);
 }
 #section2 .AccueilVelo figure img {
   display: block;
+  filter: brightness(0.4);
 }
 #section2 .AccueilVelo figure figcaption {
   position: absolute;
@@ -2117,7 +2228,7 @@ nav > div:nth-child(2) > div a {
 }
 
 #section3 {
-  height: 80vh;
+  height: 70vh;
   background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/temoignage.jpg") no-repeat;
   background-size: cover;
   color: #fff;
@@ -2135,15 +2246,12 @@ nav > div:nth-child(2) > div a {
   font-size: 1.2em;
   margin-top: 1vh;
 }
-#section3 .slider {
-  height: 35vh;
-}
 #section3 .btn-blanc-transparent {
-  margin-left: 20vw;
+  margin-left: 10vw;
 }
 
 #section6 {
-  height: 80vh;
+  height: 70vh;
   background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/sejour.jpg") no-repeat;
   background-size: cover;
   color: #fff;
@@ -2165,6 +2273,7 @@ nav > div:nth-child(2) > div a {
   height: 35vh;
 }
 #section6 .btn-blanc-transparent {
+<<<<<<< HEAD
   margin-left: 20vw;
 }
 
@@ -2207,4 +2316,7 @@ nav > div:nth-child(2) > div a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+=======
+  margin-left: 10vw;
+>>>>>>> de7bbb3d99d511c408c5832cfb28940303d18c17
 }/*# sourceMappingURL=main.css.map */

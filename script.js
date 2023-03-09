@@ -22,6 +22,23 @@ function onMapClick(e) {
   alert("You clicked the map at " + e.latlng);
 }
 
+map.on('click', onMapClick);
+
+
+//swiper accueil
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // slider//
 
@@ -33,7 +50,7 @@ let sliderImages = document.querySelectorAll(".slide"),
     // Clear all images
     function reset() {
     for (let i = 0; i < sliderImages.length; i++) {
-    	sliderImages[i].style.display = "none";
+    sliderImages[i].style.display = "none";
         }
     }
     

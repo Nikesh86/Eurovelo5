@@ -80,4 +80,7 @@ async function creer_etapes() {
     }
 }
 
+function onMapClick(e) {
+  alert("You clicked the map at " + e.latlng);
+}
 creer_etapes();
