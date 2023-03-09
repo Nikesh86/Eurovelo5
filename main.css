@@ -1746,6 +1746,7 @@ a {
 }
 
 footer > div:nth-child(1) {
+  height: 40vh;
   background: url(../../Image/qui-sommes-nous.jpg) no-repeat center center;
   color: black;
   display: flex;
@@ -1843,12 +1844,24 @@ footer > div:nth-child(4) a {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin: 0 10vw;
 }
 .grid figure {
   position: relative;
+  overflow: hidden;
   width: -moz-fit-content;
   width: fit-content;
+}
+.grid figure:hover img {
+  filter: blur(8px);
+  transition: 0.4s transform;
+  transform: scale(1.2);
+}
+.grid figure:hover a {
+  bottom: 30%;
+  transition: 0.25s;
 }
 .grid figure a {
   position: absolute;
@@ -1857,7 +1870,7 @@ footer > div:nth-child(4) a {
   font-weight: 600;
   font-size: 20px;
   color: #fff;
-  margin: 20px 20px 20px 20px;
+  margin: 5% 25%;
 }
 .grid .icon {
   position: absolute;
@@ -1876,16 +1889,8 @@ footer > div:nth-child(4) a {
   background: #eea622;
   position: absolute;
   top: 0;
-  left: 40%;
-}
-
-#section5 img {
-  transition: transform 0.2s;
-}
-#section5 img img:hover {
-  transition: transform 0.5s ease;
-  transform: scale(1.2);
-  filter: blur(5px);
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .carousel {
