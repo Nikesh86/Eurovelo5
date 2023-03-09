@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Flaticon icon font: Flaticon
 */
@@ -1745,6 +1746,119 @@ a {
   text-transform: uppercase;
 }
 
+#section3 .swiper-container {
+  height: 40vh;
+  margin-left: 1vw;
+}
+#section3 .swiper-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+#section3 .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section3 .swiper-container .swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#section3 .swiper-container figure {
+  position: relative;
+  overflow: hidden;
+}
+#section3 .swiper-container figure:hover img {
+  filter: blur(8px);
+  transition: 0.25s transform;
+  transform: scale(1.2);
+}
+#section3 .swiper-container figure:hover figcaption {
+  bottom: 18%;
+  transition: 0.25s;
+}
+#section3 .swiper-container figure figcaption {
+  position: absolute;
+  transform: translate(0, -50%);
+  width: 100%;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+#section3 .swiper-container figure figcaption span {
+  font-size: 1.75rem;
+}
+#section3 .swiper-container .swiper-button-next, #section3 .swiper-container .swiper-button-prev {
+  background-color: #fff;
+}
+
+#section6 .swiper-container {
+  height: 40vh;
+  margin-left: 1vw;
+}
+#section6 .swiper-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+#section6 .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section6 .swiper-container .swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#section6 .swiper-container figure {
+  position: relative;
+  overflow: hidden;
+}
+#section6 .swiper-container figure:hover img {
+  filter: blur(8px);
+  transition: 0.25s transform;
+  transform: scale(1.2);
+}
+#section6 .swiper-container figure span {
+  font-size: 1rem;
+  z-index: 2;
+}
+#section6 .swiper-container figure .prix {
+  position: absolute;
+  top: 5%;
+  right: 50%;
+  color: #fff;
+  background-color: orange;
+  padding: 5px 10px;
+}
+#section6 .swiper-container figure .duree {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  color: black;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+#section6 .swiper-container figure figcaption {
+  position: absolute;
+  transform: translate(0, -50%);
+  width: 100%;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+#section6 .swiper-container .swiper-button-next, #section6 .swiper-container .swiper-button-prev {
+  background-color: #fff;
+}
+
 footer > div:nth-child(1) {
   height: 40vh;
   background: url(../../Image/qui-sommes-nous.jpg) no-repeat center center;
@@ -1992,96 +2106,215 @@ nav > div:nth-child(2) > div a {
   padding: 0px 10px;
 }
 
-.savoir {
-  padding-left: 25%;
-  padding-right: 25%;
-}
-.savoir .page_savoir {
-  font-family: Poppins, sans-serif;
-  font-weight: 700;
-  font-size: 1.875rem;
-  color: #231f20;
-  text-align: center;
+.slide {
   margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 600px;
+  overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.savoir .en_savoir {
-  font-size: 1.5rem;
-  color: #231f20;
-  font-family: Poppins, sans-serif;
+
+.slide1 {
+  background-image: url("../../Image/romania-velo.jpg");
+}
+
+.slide2 {
+  background-image: url("../../Image/bike.jpg");
+}
+
+.slide3 {
+  background-image: url("../../Image/to-go-biking-2.jpg");
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 20px;
+}
+
+#arrow-right {
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 20px;
+}
+
+.container .centered {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  text-align: center;
   font-weight: 600;
+  color: #fff;
+  line-height: 1em;
+  transform: translate(0, -50%);
 }
-.savoir .en_savoir1 {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
+.container h1 {
+  font-size: 3.5rem;
 }
-.savoir .savoir_plus1 {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
-}
-.savoir .en_savoir_plus2 {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
-}
-.savoir .button_plus_savoir {
-  background-color: #00b9ca;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-decoration: none;
-  margin: 4px 2px 100px 2px;
-  border-radius: 5px;
-}
-.savoir .button_savoir {
-  background-color: #00b9ca;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-decoration: none;
-  margin: 4px 2px 100px 2px;
-  border-radius: 5px;
-}
-.savoir .liste_savoir {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
-}
-.savoir .image_savoir {
+.container .place {
+  position: absolute;
+  top: 35%;
+  left: 30%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+  gap: 10px;
 }
 
-.nous_contacter {
-  padding-left: 25%;
-  padding-right: 25%;
+#section2 {
+  margin: 30vh 0 15vh 0;
 }
-
-.contacter {
+#section2 .row h2 {
+  margin-left: 25vw;
+  position: relative;
+}
+#section2 .row h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3%;
+  transform: translate(-50%, 0);
+  background-image: url("https://www.lavelomaritime.fr/themes/fvt/images/sprite.png?1627395053578");
+  background-position: -168px -18px;
+  width: 22px;
+  height: 32px;
+}
+#section2 .row p {
+  margin-left: 22.2vw;
+}
+#section2 .AccueilVelo {
   display: flex;
-  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 20vw;
+}
+#section2 .AccueilVelo figure {
+  position: relative;
+  overflow: hidden;
+}
+#section2 .AccueilVelo figure:hover img {
+  filter: blur(7px) brightness(0.4);
+}
+#section2 .AccueilVelo figure img {
+  display: block;
+  filter: brightness(0.4);
+}
+#section2 .AccueilVelo figure figcaption {
+  position: absolute;
+  transform: translate(0, -50%);
+  z-index: 4;
+  width: 100%;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.button_nous_contacter {
-  background-color: #00b9ca;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-decoration: none;
-  margin: 4px 2px 100px 2px;
-  border-radius: 5px;
+#section3 {
+  height: 70vh;
+  background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/temoignage.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+#section3 .row {
+  padding-top: 3vh;
+  margin: 2vh 20vw;
+}
+#section3 .row h2 {
+  font-size: 3em;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+#section3 .row p {
+  font-size: 1.2em;
+  margin-top: 1vh;
+}
+#section3 .btn-blanc-transparent {
+  margin-left: 10vw;
 }
 
-.image_contacter {
+#section6 {
+  height: 70vh;
+  background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/sejour.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+#section6 .row {
+  padding-top: 3vh;
+  margin: 2vh 20vw;
+}
+#section6 .row h2 {
+  font-size: 3em;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+#section6 .row p {
+  font-size: 1.2em;
+  margin-top: 1vh;
+}
+#section6 .slider {
+  height: 35vh;
+}
+#section6 .btn-blanc-transparent {
+  margin-left: 10vw;
+}
+
+#itinéraire main {
+  background-color: teal;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+#itinéraire main #map {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+#itinéraire main #map .etaps {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+#itinéraire main #map .etaps .artiicle {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+#itinéraire main .contenu-etaps {
+  position: absolute;
+  background-color: antiquewhite;
+  inset: 0;
+  z-index: 100000;
+  display: none;
+}
+#itinéraire main .contenu-etaps.visible {
+  display: block;
+}
+#itinéraire main .contenu-etaps div {
+  position: absolute;
+  background-color: white;
+  padding: 25px;
+  border-radius: 25px;
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=main.css.map */
