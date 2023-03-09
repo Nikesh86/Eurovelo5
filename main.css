@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Flaticon icon font: Flaticon
 */
@@ -2084,4 +2085,10 @@ nav > div:nth-child(2) > div a {
 .image_contacter {
   display: flex;
   justify-content: center;
+}
+
+#prénom, input, textarea {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #f4f4f4;
 }/*# sourceMappingURL=main.css.map */
