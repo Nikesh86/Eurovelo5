@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Flaticon icon font: Flaticon
 */
@@ -2165,4 +2166,45 @@ nav > div:nth-child(2) > div a {
 }
 #section6 .btn-blanc-transparent {
   margin-left: 20vw;
+}
+
+#itinéraire main {
+  background-color: teal;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+#itinéraire main #map {
+  height: 100vh;
+}
+#itinéraire main #map .etaps {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#itinéraire main #map .etaps .artiicle {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+#itinéraire main .contenu-etaps {
+  position: absolute;
+  background-color: antiquewhite;
+  inset: 0;
+  z-index: 100000;
+  display: none;
+}
+#itinéraire main .contenu-etaps.visible {
+  display: block;
+}
+#itinéraire main .contenu-etaps div {
+  position: absolute;
+  background-color: white;
+  padding: 25px;
+  border-radius: 25px;
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=main.css.map */
