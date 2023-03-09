@@ -29,7 +29,7 @@ async function creer_etapes() {
 
             //article.id = etape.id-1
             article.addEventListener("click", function (e) {
-                let contenu_etape_txt = document.querySelector(".contenu_etape>div");
+                let contenu_etape_txt = document.querySelector(".contenu-etaps>div");
                 contenu_etape_txt.innerText = etape.attributes.description
                 contenu_etape_html.classList.add("visible");
             })
@@ -58,7 +58,7 @@ async function creer_etapes() {
                     shadowUrl: null
                 }
             }).on("click", function (e) {
-                let contenu_etape_txt = document.querySelector(".contenu_etape>div");
+                let contenu_etape_txt = document.querySelector(".contenu-etaps>div");
                 contenu_etape_txt.addEventListener("click", function (e) {
                     e.stopPropagation()
                 })
