@@ -1867,12 +1867,12 @@ a {
 }
 
 footer > div:nth-child(1) {
-  height: 40vh;
-  background: url(../../Image/qui-sommes-nous.jpg) no-repeat center center;
+  height: 30vh;
+  background: url(../../Image/romania-velo.jpg) no-repeat center center;
   color: black;
   display: flex;
   flex-direction: column;
-  padding: 0 10%;
+  padding: 0 5%;
 }
 footer > div:nth-child(1) > div {
   display: flex;
@@ -1881,6 +1881,8 @@ footer > div:nth-child(1) > div {
 }
 footer > div:nth-child(1) > div img {
   width: 30px;
+  margin: 10px;
+  padding: 10px;
 }
 footer > div:nth-child(1) > div p {
   max-width: 700px;
@@ -2014,6 +2016,13 @@ footer > div:nth-child(4) a {
   transform: translate(-50%, 0);
 }
 
+.place {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
 .carousel {
   width: 100%;
   height: 500px;
@@ -2113,6 +2122,29 @@ nav > div:nth-child(2) > div a {
   padding: 0px 10px;
 }
 
+#btn-burger {
+  display: none;
+}
+
+@media screen and (max-width: 391px) {
+  #btn-burger {
+    display: block;
+    position: fixed;
+    font-size: 3em;
+    line-height: 60px;
+    z-index: 2;
+    padding: 0.5rem;
+  }
+  .main-nav-burger.visible {
+    display: block;
+    position: fixed;
+    width: 80%;
+    z-index: 1;
+  }
+  nav {
+    display: none;
+  }
+}
 .slide {
   margin: 0;
   padding: 0;
@@ -2187,11 +2219,15 @@ nav > div:nth-child(2) > div a {
 #section4 .article {
   display: flex;
   gap: 10px;
-  margin: 10px;
+  margin: 0 20%;
   padding: 10px;
 }
 #section4 .article .avis1 {
-  background-color: antiquewhite;
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
 #section4 .article .note {
   display: flex;
@@ -2202,10 +2238,18 @@ nav > div:nth-child(2) > div a {
   justify-content: space-around;
 }
 #section4 .article .avis2 {
-  background-color: teal;
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
 #section4 .article .avis3 {
-  background-color: tomato;
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
 
 #section2 {
@@ -2307,6 +2351,32 @@ nav > div:nth-child(2) > div a {
   margin-left: 10vw;
 }
 
+@media screen and (max-width: 391px) {
+  .mapform, .AccueilVelo, .article, .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  body {
+    width: 95%;
+    margin: auto;
+  }
+  .swiper-container {
+    width: 300px;
+    height: 50px;
+  }
+  .swiper-container figure {
+    overflow: visible;
+  }
+  form option {
+    font-size: 1rem;
+  }
+  .grid figure {
+    max-width: 380px;
+  }
+  .grid figure img {
+    width: 300px;
+  }
+}
 nav {
   z-index: 100001;
   background-color: teal;
@@ -2330,11 +2400,10 @@ nav .link {
   gap: 15px;
   height: 100vh;
   overflow: scroll;
-  background-color: bisque;
 }
 #itinéraire main .etaps img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 #itinéraire main .etaps h2 {
   color: teal;
@@ -2342,6 +2411,8 @@ nav .link {
   text-align: center;
   margin: 10px;
   padding: 10px;
+  background-color: rgba(211, 223, 223, 0.604);
+  border-radius: 30px;
 }
 #itinéraire main .etaps .artiicle {
   border: 1px solid black;
@@ -2377,20 +2448,43 @@ nav .link {
   margin: 0 auto;
 }
 
-/* Example of a media query for small screens */
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 10px;
+/*  media query for small screens */
+@media only screen and (max-width: 390px) {
+  #itinéraire {
+    /* responsive image */
+  }
+  #itinéraire main .etaps {
+    width: 390px;
+  }
+  #itinéraire img {
+    max-width: 100%;
+    height: auto;
   }
 }
-/* Example of a responsive image */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 #map {
   width: 100%;
   height: 300px;
+<<<<<<< HEAD
+=======
+}
+
+@media screen and (max-width: 391px) {
+  #btn-burger {
+    display: block;
+    position: fixed;
+    font-size: 3em;
+    line-height: 60px;
+    z-index: 2;
+    padding: 0.5rem;
+  }
+  .main-nav-burger.visible {
+    display: block;
+    position: fixed;
+    width: 80%;
+    z-index: 1;
+  }
+  nav {
+    display: none;
+  }
+>>>>>>> 735e2c98073d1d03640d6784d6bbbe111b966568
 }/*# sourceMappingURL=main.css.map */
