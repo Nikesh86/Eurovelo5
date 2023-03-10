@@ -121,7 +121,7 @@
 
 
 @media screen and (max-width: 391px) {
-    .mapform , .AccueilVelo, .article, .grid {
+    .mapform , .AccueilVelo, .article, .grid, .place, footer, .text-footer, .btn-footer, footer>div:nth-child(4) {
         display: flex;
         flex-direction: column;
     }
@@ -129,6 +129,40 @@
     body {
         width: 95%;
         margin: auto;
+    }
+
+    header {
+
+        .slide {
+            margin-left: -47px;
+            width: 390px;
+        }
+
+        #arrow-left, #arrow-right {
+            display: none;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        .container .centered {
+            left: 10px;
+        }
+
+        .container .place {
+            left: 40px;
+        }
+    }
+
+    .text {
+        h2 {
+            font-size: 1.5rem;
+        }
     }
 
     .swiper-container {
@@ -144,6 +178,60 @@
         font-size: 1rem;
     }
 
+    #section2 {
+        width: 100%;
+        margin-top: 75px;
+
+        .row {
+            margin-left: -45px;
+        }
+
+        .AccueilVelo {
+            margin-left: 60px;
+        }
+        
+    }
+
+    #section3, #section6 {
+        height: 350px;
+
+        .row {
+            margin: 10px;
+
+            h2 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        .swiper-container {
+            display: none;
+            height: 200px;
+        }
+
+        .btn-container {
+            width: fit-content;
+            margin-top: 50px;
+
+            .btn-blanc-transparent {
+                font-size: 1em;
+            }
+        }
+    }
+
+    #section4 .article {
+        width: 90%;
+        margin: auto;
+
+        .note.itmes {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     .grid {
 
         figure {
@@ -154,4 +242,18 @@
             }
         }
     }
+
+    footer {
+
+        >div:nth-child(1) {
+            height: 30vh
+        }
+
+        .btn1_footer, .btn2_footer, .btn3_footer, .btn4_footer {
+            margin-left: 25px;
+            padding: 10px 5px;
+        }
+    }
+
+    
 }
