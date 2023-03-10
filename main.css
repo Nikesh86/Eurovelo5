@@ -2016,11 +2016,15 @@ nav > div:nth-child(2) > div a {
   .main-nav-burger.visible {
     display: block;
     position: fixed;
-    width: 80%;
+    width: 85%;
+    margin-left: 50px;
     z-index: 1;
   }
   nav {
     display: none;
+  }
+  nav a {
+    display: flex;
   }
 }
 .savoir {
