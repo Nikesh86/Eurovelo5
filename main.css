@@ -1747,12 +1747,12 @@ a {
 }
 
 footer > div:nth-child(1) {
-  height: 40vh;
-  background: url(../../Image/qui-sommes-nous.jpg) no-repeat center center;
+  height: 30vh;
+  background: url(../../Image/romania-velo.jpg) no-repeat center center;
   color: black;
   display: flex;
   flex-direction: column;
-  padding: 0 10%;
+  padding: 0 5%;
 }
 footer > div:nth-child(1) > div {
   display: flex;
@@ -1761,6 +1761,8 @@ footer > div:nth-child(1) > div {
 }
 footer > div:nth-child(1) > div img {
   width: 30px;
+  margin: 10px;
+  padding: 10px;
 }
 footer > div:nth-child(1) > div p {
   max-width: 700px;
@@ -2125,4 +2127,73 @@ nav > div:nth-child(2) > div a {
   padding: 10px;
   border-radius: 15px;
   background-color: #f4f4f4;
+}
+
+.passeport {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.pass1, .pass2, .pass3, .pass4, .pass5, .pass6 {
+  font-size: 1.125rem;
+  color: #585858;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.pass7, .pass8, .pass10, .pass11 {
+  font-size: 1.125rem;
+  color: #585858;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.pass9 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.125rem;
+  color: #168780;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.passeport4 {
+  padding-left: 25%;
+  padding-right: 25%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: #168780;
+  line-height: 1.5em;
+  text-align: center;
+  margin: auto;
+}
+
+.button_pass3 {
+  display: block;
+  background-color: #168780;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  margin: auto;
+}
+
+.button_pass4 {
+  display: block;
+  background-color: #168780;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 400px;
+  text-align: center;
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */
