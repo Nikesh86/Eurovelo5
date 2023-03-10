@@ -1,79 +1,3 @@
-<<<<<<< HEAD:sass/main.css
-.contact {
-  gap: 20px;
-  padding-left: 30%;
-  padding-right: 30%;
-}
-
-h1 {
-  gap: 20px;
-  color: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-right: 150px;
-}
-
-p {
-  display: flex;
-  line-height: 1.5;
-  display: block;
-  font-size: 0.865rem;
-  width: 100%;
-}
-
-div {
-  border-radius: 15px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  color: black;
-  padding: 1%;
-  font-size: 0.75rem;
-  border: none;
-}
-
-input, textarea {
-  background: #f4f4f4;
-  width: 100%;
-  padding: 2%;
-  justify-content: flex-start;
-}
-
-.button {
-  padding: 1%;
-  display: flex;
-  margin-top: 1%;
-  justify-content: flex-end;
-}
-.button button {
-  background-color: cyan;
-}
-
-.form1 {
-  size: 0px;
-  display: flex;
-  justify-content: start;
-  position: relative;
-  font-size: 0.75rem;
-  margin: 1Opx;
-}
-
-.message-rgpd {
-  margin-top: 30px;
-  font-size: 0.826rem;
-  border-radius: 5px;
-}
-
-.check {
-  width: 30px;
-  margin-right: 10px;
-  border: none;
-  font-size: 0.875rem;
-  font-family: poppins, sans-serif;
-  padding: 10px 15px;
-=======
 @charset "UTF-8";
 html, body {
   padding: 0;
@@ -1944,7 +1868,7 @@ a {
 
 footer > div:nth-child(1) {
   height: 30vh;
-  background: url(../../Image/img_footer.jpg) no-repeat center center;
+  background: url(../../Image/romania-velo.jpg) no-repeat center center;
   color: black;
   display: flex;
   flex-direction: column;
@@ -2558,7 +2482,7 @@ nav .link {
 }
 #itinéraire main .etaps h2 {
   color: teal;
-  font-size: 1, 5em;
+  font-size: 2em;
   text-align: center;
   margin: 10px;
   padding: 10px;
@@ -2635,9 +2559,4 @@ nav .link {
   nav {
     display: none;
   }
-<<<<<<< HEAD
->>>>>>> 735e2c98073d1d03640d6784d6bbbe111b966568
->>>>>>> 0e21470ac5095cc0925968deee1a41cc361155d5:scss/main.css
-=======
->>>>>>> 732ab1524f099a0f3433b9973e7caf731d563295
 }/*# sourceMappingURL=main.css.map */

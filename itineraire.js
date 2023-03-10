@@ -30,7 +30,7 @@ async function creer_etapes() {
             //article.id = etape.id-1
             article.addEventListener("click", function (e) {
                 let contenu_etape_txt = document.querySelector(".contenu-etaps>div");
-                contenu_etape_txt.innerHTML = marked.parse(etape.attributes.description)
+                contenu_etape_txt.innerText = etape.attributes.description
                 contenu_etape_html.classList.add("visible");
             })
             figure = document.createElement("figure");
@@ -55,7 +55,7 @@ async function creer_etapes() {
                 marker_options: {
                     startIconUrl: null,
                     endIconUrl: null,
-                    shadowUrl: null,
+                    shadowUrl:null,
                 }
             }).on("click", function (e) {
                 let contenu_etape_txt = document.querySelector(".contenu-etaps>div");
