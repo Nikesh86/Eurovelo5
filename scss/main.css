@@ -2014,6 +2014,13 @@ footer > div:nth-child(4) a {
   transform: translate(-50%, 0);
 }
 
+.place {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
 .carousel {
   width: 100%;
   height: 500px;
@@ -2187,11 +2194,15 @@ nav > div:nth-child(2) > div a {
 #section4 .article {
   display: flex;
   gap: 10px;
-  margin: 10px;
+  margin: 0 20%;
   padding: 10px;
 }
 #section4 .article .avis1 {
-  background-color: antiquewhite;
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
 #section4 .article .note {
   display: flex;
@@ -2202,10 +2213,18 @@ nav > div:nth-child(2) > div a {
   justify-content: space-around;
 }
 #section4 .article .avis2 {
-  background-color: teal;
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
 #section4 .article .avis3 {
-  background-color: tomato;
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
 
 #section2 {
@@ -2305,7 +2324,6 @@ nav > div:nth-child(2) > div a {
 }
 #section6 .btn-blanc-transparent {
   margin-left: 10vw;
-<<<<<<< HEAD
 }
 
 nav {
@@ -2316,8 +2334,6 @@ nav .link {
   display: flex;
   justify-content: space-around;
   gap: 10px;
-=======
->>>>>>> a1740098a913064082f182e5db967da04c8aa8b0
 }
 
 #itinéraire main {
@@ -2325,9 +2341,7 @@ nav .link {
   grid-template-columns: 1fr 3fr;
 }
 #itinéraire main #map {
-  height: 100%;
-  width: 100%;
-  position: relative;
+  height: 100vh;
 }
 #itinéraire main .etaps {
   display: flex;
@@ -2335,7 +2349,6 @@ nav .link {
   gap: 15px;
   height: 100vh;
   overflow: scroll;
-  background-color: bisque;
 }
 #itinéraire main .etaps img {
   width: 100%;
@@ -2374,7 +2387,6 @@ nav .link {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-<<<<<<< HEAD
 }
 
 /* Example of using percentage widths */
@@ -2383,22 +2395,16 @@ nav .link {
   margin: 0 auto;
 }
 
-/* Example of a media query for small screens */
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 10px;
+/*  media query for small screens */
+@media only screen and (max-width: 390px) {
+  #itinéraire {
+    /* responsive image */
   }
-}
-/* Example of a responsive image */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-#map {
-  width: 100%;
-  height: 300px;
-=======
->>>>>>> a1740098a913064082f182e5db967da04c8aa8b0
+  #itinéraire main .etaps {
+    width: 390px;
+  }
+  #itinéraire img {
+    max-width: 100%;
+    height: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
