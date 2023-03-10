@@ -1748,7 +1748,7 @@ a {
 
 footer > div:nth-child(1) {
   height: 30vh;
-  background: url(../../Image/romania-velo.jpg) no-repeat center center;
+  background: url(../../Image/img_footer.jpg) no-repeat center center;
   color: black;
   display: flex;
   flex-direction: column;
@@ -2018,11 +2018,15 @@ nav > div:nth-child(2) > div a {
   .main-nav-burger.visible {
     display: block;
     position: fixed;
-    width: 80%;
+    width: 85%;
+    margin-left: 50px;
     z-index: 1;
   }
   nav {
     display: none;
+  }
+  nav a {
+    display: flex;
   }
 }
 .savoir {

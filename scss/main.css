@@ -1944,7 +1944,7 @@ a {
 
 footer > div:nth-child(1) {
   height: 30vh;
-  background: url(../../Image/romania-velo.jpg) no-repeat center center;
+  background: url(../../Image/img_footer.jpg) no-repeat center center;
   color: black;
   display: flex;
   flex-direction: column;
@@ -2214,11 +2214,15 @@ nav > div:nth-child(2) > div a {
   .main-nav-burger.visible {
     display: block;
     position: fixed;
-    width: 80%;
+    width: 85%;
+    margin-left: 50px;
     z-index: 1;
   }
   nav {
     display: none;
+  }
+  nav a {
+    display: flex;
   }
 }
 .slide {
@@ -2428,13 +2432,35 @@ nav > div:nth-child(2) > div a {
 }
 
 @media screen and (max-width: 391px) {
-  .mapform, .AccueilVelo, .article, .grid {
+  .mapform, .AccueilVelo, .article, .grid, .place, footer, .text-footer, .btn-footer, footer > div:nth-child(4) {
     display: flex;
     flex-direction: column;
   }
   body {
     width: 95%;
     margin: auto;
+  }
+  header .slide {
+    margin-left: -47px;
+    width: 390px;
+  }
+  header #arrow-left, header #arrow-right {
+    display: none;
+  }
+  header .container h1 {
+    font-size: 2rem;
+  }
+  header h2 {
+    font-size: 1rem;
+  }
+  header .container .centered {
+    left: 10px;
+  }
+  header .container .place {
+    left: 40px;
+  }
+  .text h2 {
+    font-size: 1.5rem;
   }
   .swiper-container {
     width: 300px;
@@ -2446,11 +2472,60 @@ nav > div:nth-child(2) > div a {
   form option {
     font-size: 1rem;
   }
+  #section2 {
+    width: 100%;
+    margin-top: 75px;
+  }
+  #section2 .row {
+    margin-left: -45px;
+  }
+  #section2 .AccueilVelo {
+    margin-left: 60px;
+  }
+  #section3, #section6 {
+    height: 350px;
+  }
+  #section3 .row, #section6 .row {
+    margin: 10px;
+  }
+  #section3 .row h2, #section6 .row h2 {
+    font-size: 2em;
+  }
+  #section3 .row p, #section6 .row p {
+    font-size: 1em;
+  }
+  #section3 .swiper-container, #section6 .swiper-container {
+    display: none;
+    height: 200px;
+  }
+  #section3 .btn-container, #section6 .btn-container {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 50px;
+  }
+  #section3 .btn-container .btn-blanc-transparent, #section6 .btn-container .btn-blanc-transparent {
+    font-size: 1em;
+  }
+  #section4 .article {
+    width: 90%;
+    margin: auto;
+  }
+  #section4 .article .note.itmes {
+    display: flex;
+    flex-direction: column;
+  }
   .grid figure {
     max-width: 380px;
   }
   .grid figure img {
     width: 300px;
+  }
+  footer > div:nth-child(1) {
+    height: 30vh;
+  }
+  footer .btn1_footer, footer .btn2_footer, footer .btn3_footer, footer .btn4_footer {
+    margin-left: 25px;
+    padding: 10px 5px;
   }
 }
 nav {
@@ -2483,7 +2558,7 @@ nav .link {
 }
 #itinéraire main .etaps h2 {
   color: teal;
-  font-size: 2em;
+  font-size: 1, 5em;
   text-align: center;
   margin: 10px;
   padding: 10px;
@@ -2540,8 +2615,6 @@ nav .link {
 #map {
   width: 100%;
   height: 300px;
-<<<<<<< HEAD
-=======
 }
 
 @media screen and (max-width: 391px) {
@@ -2562,6 +2635,9 @@ nav .link {
   nav {
     display: none;
   }
+<<<<<<< HEAD
 >>>>>>> 735e2c98073d1d03640d6784d6bbbe111b966568
 >>>>>>> 0e21470ac5095cc0925968deee1a41cc361155d5:scss/main.css
+=======
+>>>>>>> 732ab1524f099a0f3433b9973e7caf731d563295
 }/*# sourceMappingURL=main.css.map */
