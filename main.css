@@ -1747,12 +1747,12 @@ a {
 }
 
 footer > div:nth-child(1) {
-  height: 40vh;
-  background: url(../../Image/qui-sommes-nous.jpg) no-repeat center center;
+  height: 30vh;
+  background: url(../../Image/romania-velo.jpg) no-repeat center center;
   color: black;
   display: flex;
   flex-direction: column;
-  padding: 0 10%;
+  padding: 0 5%;
 }
 footer > div:nth-child(1) > div {
   display: flex;
@@ -1761,6 +1761,8 @@ footer > div:nth-child(1) > div {
 }
 footer > div:nth-child(1) > div img {
   width: 30px;
+  margin: 10px;
+  padding: 10px;
 }
 footer > div:nth-child(1) > div p {
   max-width: 700px;

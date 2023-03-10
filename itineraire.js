@@ -55,7 +55,7 @@ async function creer_etapes() {
                 marker_options: {
                     startIconUrl: null,
                     endIconUrl: null,
-                    shadowUrl: null
+                    shadowUrl:null,
                 }
             }).on("click", function (e) {
                 let contenu_etape_txt = document.querySelector(".contenu-etaps>div");
@@ -81,7 +81,7 @@ async function creer_etapes() {
 }
 
 function onMapClick(e) {
-  alert("You clicked the map at " + e.latlng);
+    alert("You clicked the map at " + e.latlng);
 }
 creer_etapes();
 
@@ -91,6 +91,6 @@ let nav = document.querySelector(".main-nav-burger");
 
 
 btnBurger.addEventListener("click", () => {
-  // Code à effectuer si l'utilisateur clique sur btnBurger
-  nav.classList.toggle("visible");
+    // Code à effectuer si l'utilisateur clique sur btnBurger
+    nav.classList.toggle("visible");
 });
