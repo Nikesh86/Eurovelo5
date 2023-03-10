@@ -2273,17 +2273,55 @@ nav > div:nth-child(2) > div a {
   height: 35vh;
 }
 #section6 .btn-blanc-transparent {
-<<<<<<< HEAD
-  margin-left: 20vw;
+  margin-left: 10vw;
 }
 
+@media screen and (max-width: 391px) {
+  body {
+    width: 80%;
+    margin: auto;
+  }
+  img {
+    width: 100%;
+  }
+  .swiper-container {
+    width: 300px;
+    height: 50px;
+  }
+  .swiper-container figure {
+    overflow: visible;
+  }
+  .mapform {
+    display: flex;
+    flex-direction: column;
+  }
+  form option {
+    font-size: 1rem;
+  }
+  .AccueilVelo {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid figure {
+    max-width: 380px;
+  }
+  .grid figure img {
+    width: 300px;
+  }
+}
 #itinéraire main {
   background-color: teal;
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
 #itinéraire main #map {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 #itinéraire main #map .etaps {
   display: flex;
@@ -2316,7 +2354,4 @@ nav > div:nth-child(2) > div a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-=======
-  margin-left: 10vw;
->>>>>>> de7bbb3d99d511c408c5832cfb28940303d18c17
 }/*# sourceMappingURL=main.css.map */

@@ -118,3 +118,51 @@
         margin-left: 10vw;
     }
 }
+
+
+@media screen and (max-width: 391px) {
+    body {
+        width: 80%;
+        margin: auto;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .swiper-container {
+        width: 300px;
+        height: 50px;
+
+        figure {
+            overflow: visible;
+        }
+    }
+
+    .mapform {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form option {
+        font-size: 1rem;
+    }
+
+    .AccueilVelo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+
+        figure {
+            max-width: 380px;
+
+            img {
+                width: 300px;
+            }
+        }
+    }
+}
