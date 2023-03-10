@@ -1,0 +1,68 @@
+// button//
+.button-formul{
+    margin: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #030303;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+
+}
+.button-calculer{
+    background-color: $color1;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    
+}
+
+// button
+.btn1_footer{
+    background-color: white;
+    color: $color1;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.btn-blanc-transparent {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border: #fff 2.5px solid;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.btn2_footer{
+    background-color: $color1;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.btn3_footer{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.btn4_footer{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,41 @@
+#section4{
+    
+    .article{
+    display: flex;
+    gap: 10px;
+    margin: 0 20%;
+    padding: 10px;
+    
+    .avis1{
+        background-color: #f4f4f4;
+        border-radius: 25px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        
+    }
+    .note{
+        display: flex;
+        justify-content: space-around;
+       
+    }
+    .avisbas{
+        display: flex;
+        justify-content: space-around;
+    }
+    .avis2{
+        background-color:#f4f4f4;
+        border-radius: 25px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+    }
+    .avis3{
+        background-color: #f4f4f4;
+        border-radius: 25px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+    }
+    }
+}

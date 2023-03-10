@@ -1,0 +1,76 @@
+header {
+    >div:nth-child(2) {
+        position: relative;
+    }
+}
+
+nav {
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+    width: 100%;
+
+    >div:nth-child(1) {
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: white;
+        }
+
+        >div {
+            margin: 15px 0px;
+        }
+    }
+
+    >div:nth-child(2) {
+        // position: sticky;
+        // top: 0px;
+        padding: 0px 30px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+
+        img {
+            width: 30px;
+        }
+
+        >div {
+            margin: 15px 0px;
+
+            a {
+                padding: 0px 10px;
+            }
+        }
+    }
+}
+
+
+#btn-burger {
+    display: none;
+}
+
+@media screen and (max-width:391px) {
+    #btn-burger {
+        display: block;
+        position: fixed;
+        font-size: 3em;
+        line-height: 60px;
+        z-index: 2;
+        padding: 0.5rem;
+    }
+
+    .main-nav-burger.visible {
+        display: block;
+        position: fixed;
+        width: 80%;
+        z-index: 1;
+    }
+
+    nav {
+        display: none;
+    }
+}

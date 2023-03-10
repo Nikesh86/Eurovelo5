@@ -1,0 +1,52 @@
+<<<<<<< HEAD:sass/main.scss
+@import './pages/contact';
+=======
+//vendors
+@import "./vendors/vendor";
+@import "./vendors/flaticons";
+@import "./vendors/themify-icons";
+
+
+//base
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/container";
+
+
+//utils
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/variables";
+
+
+//components
+@import "./components/buttons";
+@import "./components/images";
+@import "./components/lists";
+@import "./components/sliders";
+@import "./components/swiper";
+
+
+//layout
+@import "./layout/aside";
+@import "./layout/footer";
+@import "./layout/form";
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/slider";
+@import "./layout/avis";
+
+
+//pages
+@import "./pages/Accueil";
+@import './pages/itieraire';
+
+
+
+//themes
+@import "./themes/darktheme";
+
+
+>>>>>>> 0e21470ac5095cc0925968deee1a41cc361155d5:scss/main.scss
+

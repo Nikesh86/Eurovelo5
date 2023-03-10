@@ -1,0 +1,121 @@
+// nav bar//
+nav {
+    z-index: 100001;
+    background-color: teal;
+
+    .link {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+    }
+}
+
+#itinéraire {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        #map {
+            height: 100vh;
+        }
+        .etaps {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 100vh;
+            overflow: scroll;
+            img {
+                width: 100%;
+                border-radius: 20px;
+            }
+
+            h2 {
+                color: teal;
+                font-size: 2em;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;
+                background-color: rgba(211, 223, 223, 0.604);
+                border-radius: 30px;
+            }
+            .artiicle {
+                border: 1px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 15px;
+            }
+        }
+        .contenu-etaps {
+            position: absolute;
+            background-color: rgba(250, 235, 215, 0.458);
+            inset: 0;
+            z-index: 100000;
+            display: none;
+            &.visible {
+                display: block;
+            }
+            div {
+                position: absolute;
+                background-color: white;
+                padding: 25px;
+                border-radius: 25px;
+                z-index: 100000;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+/* Example of using percentage widths */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/*  media query for small screens */
+@media only screen and (max-width: 390px) {
+    #itinéraire {
+        main {
+            .etaps {
+                width: 390px;
+            }
+        }
+
+        /* responsive image */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (max-width:391px) {
+    #btn-burger {
+        display: block;
+        position: fixed;
+        font-size: 3em;
+        line-height: 60px;
+        z-index: 2;
+        padding: 0.5rem;
+    }
+
+    .main-nav-burger.visible {
+        display: block;
+        position: fixed;
+        width: 80%;
+        z-index: 1;
+    }
+
+    nav {
+        display: none;
+    }
+}

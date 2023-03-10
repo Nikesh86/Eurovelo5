@@ -1,4 +1,87 @@
+<<<<<<< HEAD:sass/main.css
+.contact {
+  gap: 20px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+h1 {
+  gap: 20px;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 150px;
+}
+
+p {
+  display: flex;
+  line-height: 1.5;
+  display: block;
+  font-size: 0.865rem;
+  width: 100%;
+}
+
+div {
+  border-radius: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: black;
+  padding: 1%;
+  font-size: 0.75rem;
+  border: none;
+}
+
+input, textarea {
+  background: #f4f4f4;
+  width: 100%;
+  padding: 2%;
+  justify-content: flex-start;
+}
+
+.button {
+  padding: 1%;
+  display: flex;
+  margin-top: 1%;
+  justify-content: flex-end;
+}
+.button button {
+  background-color: cyan;
+}
+
+.form1 {
+  size: 0px;
+  display: flex;
+  justify-content: start;
+  position: relative;
+  font-size: 0.75rem;
+  margin: 1Opx;
+}
+
+.message-rgpd {
+  margin-top: 30px;
+  font-size: 0.826rem;
+  border-radius: 5px;
+}
+
+.check {
+  width: 30px;
+  margin-right: 10px;
+  border: none;
+  font-size: 0.875rem;
+  font-family: poppins, sans-serif;
+  padding: 10px 15px;
+=======
 @charset "UTF-8";
+html, body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
 /*
 Flaticon icon font: Flaticon
 */
@@ -1746,6 +1829,119 @@ a {
   text-transform: uppercase;
 }
 
+#section3 .swiper-container {
+  height: 40vh;
+  margin-left: 1vw;
+}
+#section3 .swiper-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+#section3 .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section3 .swiper-container .swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#section3 .swiper-container figure {
+  position: relative;
+  overflow: hidden;
+}
+#section3 .swiper-container figure:hover img {
+  filter: blur(8px);
+  transition: 0.25s transform;
+  transform: scale(1.2);
+}
+#section3 .swiper-container figure:hover figcaption {
+  bottom: 18%;
+  transition: 0.25s;
+}
+#section3 .swiper-container figure figcaption {
+  position: absolute;
+  transform: translate(0, -50%);
+  width: 100%;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+#section3 .swiper-container figure figcaption span {
+  font-size: 1.75rem;
+}
+#section3 .swiper-container .swiper-button-next, #section3 .swiper-container .swiper-button-prev {
+  background-color: #fff;
+}
+
+#section6 .swiper-container {
+  height: 40vh;
+  margin-left: 1vw;
+}
+#section6 .swiper-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+#section6 .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section6 .swiper-container .swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#section6 .swiper-container figure {
+  position: relative;
+  overflow: hidden;
+}
+#section6 .swiper-container figure:hover img {
+  filter: blur(8px);
+  transition: 0.25s transform;
+  transform: scale(1.2);
+}
+#section6 .swiper-container figure span {
+  font-size: 1rem;
+  z-index: 2;
+}
+#section6 .swiper-container figure .prix {
+  position: absolute;
+  top: 5%;
+  right: 50%;
+  color: #fff;
+  background-color: orange;
+  padding: 5px 10px;
+}
+#section6 .swiper-container figure .duree {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  color: black;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+#section6 .swiper-container figure figcaption {
+  position: absolute;
+  transform: translate(0, -50%);
+  width: 100%;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+#section6 .swiper-container .swiper-button-next, #section6 .swiper-container .swiper-button-prev {
+  background-color: #fff;
+}
+
 footer > div:nth-child(1) {
   height: 30vh;
   background: url(../../Image/romania-velo.jpg) no-repeat center center;
@@ -2025,171 +2221,347 @@ nav > div:nth-child(2) > div a {
     display: none;
   }
 }
-.savoir {
-  padding-left: 25%;
-  padding-right: 25%;
-}
-.savoir .page_savoir {
-  font-family: Poppins, sans-serif;
-  font-weight: 700;
-  font-size: 1.875rem;
-  color: #231f20;
-  text-align: center;
+.slide {
   margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 600px;
+  overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.savoir .en_savoir {
-  font-size: 1.5rem;
-  color: #231f20;
-  font-family: Poppins, sans-serif;
+
+.slide1 {
+  background-image: url("../../Image/romania-velo.jpg");
+}
+
+.slide2 {
+  background-image: url("../../Image/bike.jpg");
+}
+
+.slide3 {
+  background-image: url("../../Image/to-go-biking-2.jpg");
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 20px;
+}
+
+#arrow-right {
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 20px;
+}
+
+.container .centered {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  text-align: center;
   font-weight: 600;
+  color: #fff;
+  line-height: 1em;
+  transform: translate(0, -50%);
 }
-.savoir .en_savoir1 {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
+.container h1 {
+  font-size: 3.5rem;
 }
-.savoir .savoir_plus1 {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
-}
-.savoir .en_savoir_plus2 {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
-}
-.savoir .button_plus_savoir {
-  background-color: #00b9ca;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-decoration: none;
-  margin: 4px 2px 100px 2px;
-  border-radius: 5px;
-}
-.savoir .button_savoir {
-  background-color: #00b9ca;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-decoration: none;
-  margin: 4px 2px 100px 2px;
-  border-radius: 5px;
-}
-.savoir .liste_savoir {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
-}
-.savoir .image_savoir {
+.container .place {
+  position: absolute;
+  top: 35%;
+  left: 30%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+  gap: 10px;
 }
 
-.nous_contacter {
-  padding-left: 25%;
-  padding-right: 25%;
-}
-
-.contacter {
+#section4 .article {
   display: flex;
-  justify-content: center;
-}
-
-.button_nous_contacter {
-  background-color: #00b9ca;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-decoration: none;
-  margin: 4px 2px 100px 2px;
-  border-radius: 5px;
-}
-
-.image_contacter {
-  display: flex;
-  justify-content: center;
-}
-
-#prénom, input, textarea {
+  gap: 10px;
+  margin: 0 20%;
   padding: 10px;
-  border-radius: 15px;
+}
+#section4 .article .avis1 {
   background-color: #f4f4f4;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
-
-.passeport {
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-.pass1, .pass2, .pass3, .pass4, .pass5, .pass6 {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
-}
-
-.pass7, .pass8, .pass10, .pass11 {
-  font-size: 1.125rem;
-  color: #585858;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
-}
-
-.pass9 {
+#section4 .article .note {
   display: flex;
-  justify-content: center;
-  font-size: 1.125rem;
-  color: #168780;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-top: 15px;
+  justify-content: space-around;
 }
-
-.passeport4 {
-  padding-left: 25%;
-  padding-right: 25%;
+#section4 .article .avisbas {
   display: flex;
-  justify-content: center;
-  font-size: 2rem;
-  color: #168780;
-  line-height: 1.5em;
+  justify-content: space-around;
+}
+#section4 .article .avis2 {
+  background-color: #f4f4f4;
+  border-radius: 25px;
   text-align: center;
-  margin: auto;
+  margin: 10px;
+  padding: 10px;
+}
+#section4 .article .avis3 {
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
 
-.button_pass3 {
+#section2 {
+  margin: 30vh 0 15vh 0;
+}
+#section2 .row h2 {
+  margin-left: 25vw;
+  position: relative;
+}
+#section2 .row h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3%;
+  transform: translate(-50%, 0);
+  background-image: url("https://www.lavelomaritime.fr/themes/fvt/images/sprite.png?1627395053578");
+  background-position: -168px -18px;
+  width: 22px;
+  height: 32px;
+}
+#section2 .row p {
+  margin-left: 22.2vw;
+}
+#section2 .AccueilVelo {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 20vw;
+}
+#section2 .AccueilVelo figure {
+  position: relative;
+  overflow: hidden;
+}
+#section2 .AccueilVelo figure:hover img {
+  filter: blur(7px) brightness(0.4);
+}
+#section2 .AccueilVelo figure img {
   display: block;
-  background-color: #168780;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  width: 200px;
+  filter: brightness(0.4);
+}
+#section2 .AccueilVelo figure figcaption {
+  position: absolute;
+  transform: translate(0, -50%);
+  z-index: 4;
+  width: 100%;
+  top: 50%;
+  color: #fff;
   text-align: center;
-  margin: auto;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.button_pass4 {
-  display: block;
-  background-color: #168780;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  width: 400px;
+#section3 {
+  height: 70vh;
+  background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/temoignage.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+#section3 .row {
+  padding-top: 3vh;
+  margin: 2vh 20vw;
+}
+#section3 .row h2 {
+  font-size: 3em;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+#section3 .row p {
+  font-size: 1.2em;
+  margin-top: 1vh;
+}
+#section3 .btn-blanc-transparent {
+  margin-left: 10vw;
+}
+
+#section6 {
+  height: 70vh;
+  background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/sejour.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+#section6 .row {
+  padding-top: 3vh;
+  margin: 2vh 20vw;
+}
+#section6 .row h2 {
+  font-size: 3em;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+#section6 .row p {
+  font-size: 1.2em;
+  margin-top: 1vh;
+}
+#section6 .slider {
+  height: 35vh;
+}
+#section6 .btn-blanc-transparent {
+  margin-left: 10vw;
+}
+
+@media screen and (max-width: 391px) {
+  .mapform, .AccueilVelo, .article, .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  body {
+    width: 95%;
+    margin: auto;
+  }
+  .swiper-container {
+    width: 300px;
+    height: 50px;
+  }
+  .swiper-container figure {
+    overflow: visible;
+  }
+  form option {
+    font-size: 1rem;
+  }
+  .grid figure {
+    max-width: 380px;
+  }
+  .grid figure img {
+    width: 300px;
+  }
+}
+nav {
+  z-index: 100001;
+  background-color: teal;
+}
+nav .link {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+#itinéraire main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+#itinéraire main #map {
+  height: 100vh;
+}
+#itinéraire main .etaps {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100vh;
+  overflow: scroll;
+}
+#itinéraire main .etaps img {
+  width: 100%;
+  border-radius: 20px;
+}
+#itinéraire main .etaps h2 {
+  color: teal;
+  font-size: 2em;
   text-align: center;
-  margin: auto;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(211, 223, 223, 0.604);
+  border-radius: 30px;
+}
+#itinéraire main .etaps .artiicle {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+#itinéraire main .contenu-etaps {
+  position: absolute;
+  background-color: rgba(250, 235, 215, 0.458);
+  inset: 0;
+  z-index: 100000;
+  display: none;
+}
+#itinéraire main .contenu-etaps.visible {
+  display: block;
+}
+#itinéraire main .contenu-etaps div {
+  position: absolute;
+  background-color: white;
+  padding: 25px;
+  border-radius: 25px;
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Example of using percentage widths */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*  media query for small screens */
+@media only screen and (max-width: 390px) {
+  #itinéraire {
+    /* responsive image */
+  }
+  #itinéraire main .etaps {
+    width: 390px;
+  }
+  #itinéraire img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+#map {
+  width: 100%;
+  height: 300px;
+<<<<<<< HEAD
+=======
+}
+
+@media screen and (max-width: 391px) {
+  #btn-burger {
+    display: block;
+    position: fixed;
+    font-size: 3em;
+    line-height: 60px;
+    z-index: 2;
+    padding: 0.5rem;
+  }
+  .main-nav-burger.visible {
+    display: block;
+    position: fixed;
+    width: 80%;
+    z-index: 1;
+  }
+  nav {
+    display: none;
+  }
+>>>>>>> 735e2c98073d1d03640d6784d6bbbe111b966568
+>>>>>>> 0e21470ac5095cc0925968deee1a41cc361155d5:scss/main.css
 }/*# sourceMappingURL=main.css.map */
