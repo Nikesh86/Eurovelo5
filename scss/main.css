@@ -2305,7 +2305,6 @@ nav > div:nth-child(2) > div a {
 }
 #section6 .btn-blanc-transparent {
   margin-left: 10vw;
-<<<<<<< HEAD
 }
 
 nav {
@@ -2316,8 +2315,6 @@ nav .link {
   display: flex;
   justify-content: space-around;
   gap: 10px;
-=======
->>>>>>> a1740098a913064082f182e5db967da04c8aa8b0
 }
 
 #itinéraire main {
@@ -2325,9 +2322,7 @@ nav .link {
   grid-template-columns: 1fr 3fr;
 }
 #itinéraire main #map {
-  height: 100%;
-  width: 100%;
-  position: relative;
+  height: 100vh;
 }
 #itinéraire main .etaps {
   display: flex;
@@ -2374,7 +2369,6 @@ nav .link {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-<<<<<<< HEAD
 }
 
 /* Example of using percentage widths */
@@ -2399,6 +2393,4 @@ img {
 #map {
   width: 100%;
   height: 300px;
-=======
->>>>>>> a1740098a913064082f182e5db967da04c8aa8b0
 }/*# sourceMappingURL=main.css.map */
