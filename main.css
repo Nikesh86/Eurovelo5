@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Flaticon icon font: Flaticon
 */
@@ -2059,4 +2060,35 @@ nav > div:nth-child(2) > div a {
 .savoir .image_savoir {
   display: flex;
   justify-content: center;
+}
+
+.nous_contacter {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.contacter {
+  display: flex;
+  justify-content: center;
+}
+
+.button_nous_contacter {
+  background-color: #00b9ca;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-decoration: none;
+  margin: 4px 2px 100px 2px;
+  border-radius: 5px;
+}
+
+.image_contacter {
+  display: flex;
+  justify-content: center;
+}
+
+#prénom, input, textarea {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #f4f4f4;
 }/*# sourceMappingURL=main.css.map */

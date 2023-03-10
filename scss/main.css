@@ -1,4 +1,11 @@
 @charset "UTF-8";
+html, body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
 /*
 Flaticon icon font: Flaticon
 */
@@ -2177,6 +2184,30 @@ nav > div:nth-child(2) > div a {
   gap: 10px;
 }
 
+#section4 .article {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+#section4 .article .avis1 {
+  background-color: antiquewhite;
+}
+#section4 .article .note {
+  display: flex;
+  justify-content: space-around;
+}
+#section4 .article .avisbas {
+  display: flex;
+  justify-content: space-around;
+}
+#section4 .article .avis2 {
+  background-color: teal;
+}
+#section4 .article .avis3 {
+  background-color: tomato;
+}
+
 #section2 {
   margin: 30vh 0 15vh 0;
 }
@@ -2313,22 +2344,43 @@ nav > div:nth-child(2) > div a {
     width: 300px;
   }
 }
-#itinéraire main {
+nav {
+  z-index: 100001;
   background-color: teal;
+}
+nav .link {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+#itinéraire main {
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
 #itinéraire main #map {
-  height: 100%;
-  width: 100%;
-  position: relative;
+  height: 100vh;
 }
-#itinéraire main #map .etaps {
+#itinéraire main .etaps {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  height: 100vh;
+  overflow: scroll;
+  background-color: bisque;
 }
-#itinéraire main #map .etaps .artiicle {
+#itinéraire main .etaps img {
+  width: 100%;
+  border-radius: 10px;
+}
+#itinéraire main .etaps h2 {
+  color: teal;
+  font-size: 2em;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+#itinéraire main .etaps .artiicle {
   border: 1px solid black;
   display: flex;
   align-items: center;
@@ -2337,7 +2389,7 @@ nav > div:nth-child(2) > div a {
 }
 #itinéraire main .contenu-etaps {
   position: absolute;
-  background-color: antiquewhite;
+  background-color: rgba(250, 235, 215, 0.458);
   inset: 0;
   z-index: 100000;
   display: none;
@@ -2354,4 +2406,28 @@ nav > div:nth-child(2) > div a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Example of using percentage widths */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Example of a media query for small screens */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+/* Example of a responsive image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
 }/*# sourceMappingURL=main.css.map */
