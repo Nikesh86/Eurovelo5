@@ -1,21 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../sass/main.css">
     <title>contact</title>
 </head>
+
 <body>
-    
+    <div class="contact">
+        <h1 class="page-title">Demande d'information</h1>
+        <p>
+            Vous avez une question ? Votre réponse se trouve peutêtre
+            <a href="https://www.lavelomaritime.fr/infos-pratiques/foire-aux-questions">ici</a>
+        </p>
+
+        <form>
+            <div class="form">
+                <div class="formInput">
+                    <input type="text" placeholder="Votre nom *">
+                </div>
+
+                <div class="formInput">
+                    <input type="text" placeholder="Votre prénom *">
+                </div>
+
+                <div class="formInput">
+                    <input type="email" placeholder="Votre e-mail *">
+                </div>
+
+                <div class="formInput">
+                    <input type="tel" placeholder="Votre numéro de téléphone *">
+                </div>
+
+                <div class="formInput">
+                    <input type="text" placeholder="subject *">
+                </div>
+
+                <div class="formTextarea">
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Message *"></textarea>
+                </div>
+                <div class="form1">
+
+                    <input class="check" data-drupal-selector="edit-optinrgpd" type="checkbox" id="edit-optinrgpd" name="optinrgpd"
+                        value="1" class="form-checkbox required" required="required">
+                    <label for="edit-optinrgpd" class="option js-form-required form-required">En soumettant ce
+                        formulaire,
+                        j'accepte que les informations saisies soient utilisées pour répondre à ma demande
+                        d'information</label>
+                </div><br>
+
+                <div class="button">
+                    <button type="submit" id="envoyer">ENVOYER LE MESSAGE</button>
+                </div>
+                <div class="message-rgpd">
+                    Les données collectées dans le cadre de ce formulaire font l’objet d’un traitement par La
+                    Vélomaritime
+                    ayant pour finalité de répondre à votre demande d’informations. Conformément à
+                    la réglementation en vigueur relative à la protection des données personnelles,
+                    vous pouvez exercer vos droits ou obtenir toute information complémentaire en saisissant le Délégué
+                    à la
+                    protection des données par
+                    <a href="https://www.lavelomaritime.fr/contact/demande_d_information">couriel</a> 
+                </div>
+            
+            </div>
+        </form>
+
+    </div>
+
+
+        <!--
+    <footer>
+        <img   src="../Image/Fichier 1ldpi.svg">
+ 
+<div  class="link-share">
+
+    <a class="instagram target-blanck" href="https://www.instagram.com/lavelomaritime/"></a>
+    <a class="instagram target-blanck" href="https://www.facebook.com/lavelomaritime/"></a>
+</div>
+<h3>Qui sommes nous ?</h3>
+<p>La Vélomaritime est un itinéraire vélo développé et promu par un réseau de collectivités
+    territoriales et leurs institutions touristiques.
+</p>
+<a  href="https://www.lavelomaritime.fr/qui-sommes-nous">En savoir plus</a>
+
+<a  href="/contact">Nous contacter</a>
+    </footer>
+    -->
+
+
+        <script src="script.js"></script>
 
 
 
 
 
 
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,55 @@
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    section {
+        width: 45%;
+
+        h3 {
+            color: $blanc;
+            font-family: $fontTitre;
+            letter-spacing: 0;
+            font-size: 1.5rem;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        .tel {
+            margin: 2.5rem 0;
+
+            .infos {
+                display: flex;
+                flex-direction: column;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .flaticon-call,
+            .flaticon-envelope,
+            .flaticon-location-pin {
+                color: $special;
+                font-size: 2.25rem;
+            }
+
+            .telText {
+                display: block;
+                color: $texte;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            .num {
+                font-family: $fontAnnotation;
+                color: $special;
+                font-size: 1.5rem;
+            }
+        }
+    }
