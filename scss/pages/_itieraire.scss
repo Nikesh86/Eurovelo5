@@ -99,4 +99,16 @@ nav {
             height: auto;
         }
     }
-}
+  }
+  
+  /* Example of a responsive image */
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #map {
+    width: 100%;
+    height: 300px;
+  }
+  
