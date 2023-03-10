@@ -2113,6 +2113,29 @@ nav > div:nth-child(2) > div a {
   padding: 0px 10px;
 }
 
+#btn-burger {
+  display: none;
+}
+
+@media screen and (max-width: 391px) {
+  #btn-burger {
+    display: block;
+    position: fixed;
+    font-size: 3em;
+    line-height: 60px;
+    z-index: 2;
+    padding: 0.5rem;
+  }
+  .main-nav-burger.visible {
+    display: block;
+    position: fixed;
+    width: 80%;
+    z-index: 1;
+  }
+  nav {
+    display: none;
+  }
+}
 .slide {
   margin: 0;
   padding: 0;
@@ -2308,12 +2331,13 @@ nav > div:nth-child(2) > div a {
 }
 
 @media screen and (max-width: 391px) {
-  body {
-    width: 80%;
-    margin: auto;
+  .mapform, .AccueilVelo, .article, .grid {
+    display: flex;
+    flex-direction: column;
   }
-  img {
-    width: 100%;
+  body {
+    width: 95%;
+    margin: auto;
   }
   .swiper-container {
     width: 300px;
@@ -2322,20 +2346,8 @@ nav > div:nth-child(2) > div a {
   .swiper-container figure {
     overflow: visible;
   }
-  .mapform {
-    display: flex;
-    flex-direction: column;
-  }
   form option {
     font-size: 1rem;
-  }
-  .AccueilVelo {
-    display: flex;
-    flex-direction: column;
-  }
-  .grid {
-    display: flex;
-    flex-direction: column;
   }
   .grid figure {
     max-width: 380px;

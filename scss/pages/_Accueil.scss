@@ -121,13 +121,14 @@
 
 
 @media screen and (max-width: 391px) {
-    body {
-        width: 80%;
-        margin: auto;
+    .mapform , .AccueilVelo, .article, .grid {
+        display: flex;
+        flex-direction: column;
     }
 
-    img {
-        width: 100%;
+    body {
+        width: 95%;
+        margin: auto;
     }
 
     .swiper-container {
@@ -139,23 +140,11 @@
         }
     }
 
-    .mapform {
-        display: flex;
-        flex-direction: column;
-    }
-
     form option {
         font-size: 1rem;
     }
 
-    .AccueilVelo {
-        display: flex;
-        flex-direction: column;
-    }
-
     .grid {
-        display: flex;
-        flex-direction: column;
 
         figure {
             max-width: 380px;
