@@ -1,6 +1,12 @@
 //page carousel//
+.place{
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
 
-.carousel{
+.carousel {
     width: 100%;
     height: 500px;
     position: relative;
@@ -8,7 +14,7 @@
 
 .carousel .slide {
     width: 100%;
-    height:100%;
+    height: 100%;
     display: flex;
     position: absolute;
     top: 0;
@@ -56,4 +62,6 @@
 }
 
 //map//
-#map { height: 100%; }
+#map {
+    height: 100%;
+}

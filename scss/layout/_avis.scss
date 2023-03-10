@@ -3,11 +3,15 @@
     .article{
     display: flex;
     gap: 10px;
-    margin: 10px;
+    margin: 0 20%;
     padding: 10px;
     
     .avis1{
-        background-color: antiquewhite;
+        background-color: #f4f4f4;
+        border-radius: 25px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
         
     }
     .note{
@@ -20,10 +24,18 @@
         justify-content: space-around;
     }
     .avis2{
-        background-color: teal;
+        background-color:#f4f4f4;
+        border-radius: 25px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
     }
     .avis3{
-        background-color: tomato;
+        background-color: #f4f4f4;
+        border-radius: 25px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
     }
     }
 }

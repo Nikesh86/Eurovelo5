@@ -1,39 +1,45 @@
-nav{
+nav {
     z-index: 100001;
-   background-color: teal;
-   .link{
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
+    background-color: teal;
+
+    .link {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+    }
 }
-}
+
 #itinéraire {
     main {
-        
+
         display: grid;
         grid-template-columns: 1fr 3fr;
+
         #map {
             height: 100vh;
-            
+
         }
+
         .etaps {
             display: flex;
             flex-direction: column;
             gap: 15px;
             height: 100vh;
             overflow: scroll;
-            background-color: bisque;
-            img{
+
+            img {
                 width: 100%;
                 border-radius: 10px;
             }
-            h2{
-            color: teal;
-            font-size: 2em;
-            text-align: center;
-            margin: 10px;
-            padding: 10px;
+
+            h2 {
+                color: teal;
+                font-size: 2em;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;
             }
+
             .artiicle {
                 border: 1px solid black;
                 display: flex;
@@ -42,6 +48,7 @@ nav{
                 padding-right: 15px;
             }
         }
+
         .contenu-etaps {
             position: absolute;
             background-color: rgba(250, 235, 215, 0.458);
@@ -73,15 +80,24 @@ nav{
 .container {
     width: 80%;
     margin: 0 auto;
-  }
-  
+}
 
 
-  /* Example of a media query for small screens */
-@media only screen and (max-width: 768px) {
-    .container {
-      width: 100%;
-      padding: 0 10px;
+
+/*  media query for small screens */
+@media only screen and (max-width: 390px) {
+    #itinéraire {
+        main {
+            .etaps {
+                width: 390px; 
+            }
+        }
+
+        /* responsive image */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     }
   }
   
