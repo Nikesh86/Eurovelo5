@@ -1754,7 +1754,7 @@ a {
 }
 
 #section3 .swiper-container {
-  height: 40vh;
+  height: 45vh;
   margin-left: 1vw;
 }
 #section3 .swiper-container .swiper {
@@ -1804,7 +1804,7 @@ a {
 }
 
 #section6 .swiper-container {
-  height: 40vh;
+  height: 45vh;
   margin-left: 1vw;
 }
 #section6 .swiper-container .swiper {
@@ -2307,7 +2307,7 @@ nav > div:nth-child(2) > div a {
 }
 
 #section3 {
-  height: 70vh;
+  height: 85vh;
   background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/temoignage.jpg") no-repeat;
   background-size: cover;
   color: #fff;
@@ -2327,10 +2327,11 @@ nav > div:nth-child(2) > div a {
 }
 #section3 .btn-blanc-transparent {
   margin-left: 10vw;
+  margin-bottom: 25px;
 }
 
 #section6 {
-  height: 70vh;
+  height: 85vh;
   background: url("https://www.lavelomaritime.fr/sites/eurovelo4/themes/eurovelo4/images/sejour.jpg") no-repeat;
   background-size: cover;
   color: #fff;
@@ -2353,6 +2354,7 @@ nav > div:nth-child(2) > div a {
 }
 #section6 .btn-blanc-transparent {
   margin-left: 10vw;
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 391px) {
